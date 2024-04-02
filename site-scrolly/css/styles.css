@@ -1,0 +1,279 @@
+/*-------------------------------------------------------------------------------------
+# FONT_FACE
+-------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: "No Scary";
+    src: url(../fonts/noscary/NoScary-regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Handy Times";
+    src: url(../fonts/handy_times/Handy\ Times.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Manus";
+    src: url(../fonts/manus/MNS_TRIAL.ttf) format("truetype");
+}
+
+/*-------------------------------------------------------------------------------------
+# PALETTE DE COULEURS
+-------------------------------------------------------------------------------------*/
+:root {
+    --blanc: #ffffff;
+    --blancGris: #DEE2E6; 
+    --grisBlanc: #ADB5BD; 
+    --gris: #6C757D; 
+    --grisNoir: #393939; 
+    --noirGris: #1a1a1a;
+    --noir: #000000;
+}
+
+/*-------------------------------------------------------------------------------------
+# FONTS
+-------------------------------------------------------------------------------------*/
+:root {
+    --noScary: "No Scary";
+    --handyTimes: "Handy Times";
+    --manus: "Manus";
+}
+
+/*-------------------------------------------------------------------------------------
+# STYLES GÉNÉRAUX
+-------------------------------------------------------------------------------------*/
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+h1,
+.h1 {
+    font-family: var(--noScary);
+    font-size: 10vw;
+    font-weight: 700;
+    color: var(--blancGris);
+}
+
+h2,
+.h2 {
+  font-family: var(--handyTimes);
+  font-size: 4vw;
+  font-weight: lighter;
+  color: var(--blancGris);
+}
+
+h3,
+.h3 {
+  font-family: var(--manus);
+  font-size: 35px;
+  color: var(--blancGris);
+}
+
+h4,
+.h4 {
+  font-family: var(--manus);
+  font-size: 25px;
+  color: var(--blancGris);
+}
+
+h5,
+.h5 {
+  font-family: var(--manus);
+  font-size: 20px;
+  color: var(--noir);
+}
+
+h6,
+.h6 {
+  font-family: var(--handyTimes);
+  font-size: 1.2vw;
+  color: var(--noir);
+}
+
+/*-------------------------------------------------------------------------------------
+# Header
+-------------------------------------------------------------------------------------*/
+
+body { 
+    background-color: var(--grisNoir);
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+}
+
+.title {
+    padding-top: 25%;
+    text-shadow: 20px 1px var(--noir), -10px 1px 11px var(--noir);
+    text-align: center;
+}
+
+.description {
+    color: var(--blanc);
+    text-shadow: 20px 1px var(--noir), -10px 1px 11px var(--noir);
+    text-align: center;
+}
+
+.arrow {
+    height: auto;
+    width: 5vw; 
+}
+
+.background {
+    position: absolute;
+    height: 95vh;
+    width: auto;
+    mix-blend-mode: difference;
+    background-repeat: no-repeat;
+}
+
+.imgTitle {
+    height: 100vh;
+    width: 100vw;
+}
+
+.arrowText {
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) and (min-width:  768px) {
+    .title {
+        padding-top: 30%;
+        font-size: 15vw;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .description {
+        font-size: 2vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title {
+        padding-top: 30%;
+        font-size: 20vw;
+    }
+
+    .arrow {
+        height: auto;
+        width: 10vw; 
+    }
+
+    .info {
+        font-size: 2vw;
+    }
+
+  }
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 1
+-------------------------------------------------------------------------------------*/
+
+section {
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px red;
+}
+
+#chapter01 {
+    background-image: linear-gradient(var(--noir) 10%, var(--blanc));
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 2
+-------------------------------------------------------------------------------------*/
+
+#chapter02 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 3
+-------------------------------------------------------------------------------------*/
+
+#chapter03 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 4
+-------------------------------------------------------------------------------------*/
+
+#chapter04 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 5
+-------------------------------------------------------------------------------------*/
+
+#chapter05 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 6
+-------------------------------------------------------------------------------------*/
+
+#chapter06 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 7
+-------------------------------------------------------------------------------------*/
+
+#chapter07 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 8
+-------------------------------------------------------------------------------------*/
+
+#chapter08 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Chapitre 9
+-------------------------------------------------------------------------------------*/
+
+#chapter09 {
+    
+}
+
+/*-------------------------------------------------------------------------------------
+# Footer
+-------------------------------------------------------------------------------------*/
+
+.info {
+    display: flex;
+    color: var(--blancGris);
+    justify-content: center;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
