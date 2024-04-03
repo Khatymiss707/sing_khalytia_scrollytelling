@@ -21,10 +21,10 @@
 -------------------------------------------------------------------------------------*/
 :root {
     --blanc: #ffffff;
-    --blancGris: #DEE2E6; 
-    --grisBlanc: #ADB5BD; 
-    --gris: #6C757D; 
-    --grisNoir: #393939; 
+    --blancGris: #DEE2E6;
+    --grisBlanc: #ADB5BD;
+    --gris: #6C757D;
+    --grisNoir: #393939;
     --noirGris: #1a1a1a;
     --noir: #000000;
 }
@@ -60,55 +60,55 @@ h1,
 
 h2,
 .h2 {
-  font-family: var(--handyTimes);
-  font-size: 4vw;
-  font-weight: lighter;
-  color: var(--blancGris);
+    font-family: var(--handyTimes);
+    font-size: 4vw;
+    font-weight: lighter;
+    color: var(--blancGris);
 }
 
 h3,
 .h3 {
-  font-family: var(--manus);
-  font-size: 35px;
-  color: var(--blancGris);
+    font-family: var(--manus);
+    font-size: 35px;
+    color: var(--blancGris);
 }
 
 h4,
 .h4 {
-  font-family: var(--manus);
-  font-size: 25px;
-  color: var(--blancGris);
+    font-family: var(--manus);
+    font-size: 25px;
+    color: var(--blancGris);
 }
 
 h5,
 .h5 {
-  font-family: var(--manus);
-  font-size: 20px;
-  color: var(--noir);
+    font-family: var(--manus);
+    font-size: 20px;
+    color: var(--noir);
 }
 
 h6,
 .h6 {
-  font-family: var(--handyTimes);
-  font-size: 1.2vw;
-  color: var(--noir);
+    font-family: var(--handyTimes);
+    font-size: 1.2vw;
+    color: var(--noir);
 }
 
 /*-------------------------------------------------------------------------------------
 # Header
 -------------------------------------------------------------------------------------*/
 
-body { 
+body {
     background-color: var(--grisNoir);
     overflow-x: hidden;
 }
 
 header {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
 }
 
 .title {
@@ -125,7 +125,7 @@ header {
 
 .arrow {
     height: auto;
-    width: 5vw; 
+    width: 5vw;
 }
 
 .background {
@@ -145,7 +145,7 @@ header {
     text-align: center;
 }
 
-@media screen and (max-width: 1200px) and (min-width:  768px) {
+@media screen and (max-width: 1200px) and (min-width: 769px) {
     .title {
         padding-top: 30%;
         font-size: 15vw;
@@ -176,14 +176,14 @@ header {
 
     .arrow {
         height: auto;
-        width: 10vw; 
+        width: 10vw;
     }
 
     .info {
         font-size: 2vw;
     }
 
-  }
+}
 
 /*-------------------------------------------------------------------------------------
 # Chapitre 1
@@ -285,3 +285,86 @@ section {
     padding-bottom: 10px;
 }
 
+/*-------------------------------------------------------------------------------------
+# Test Spritesheet
+-------------------------------------------------------------------------------------*/
+
+.scroll {
+    height: 1500px;
+    width: auto;
+}
+
+.girl {
+    background-image: url(../img/img_personnages/spritesheet_fille.png);
+    width: 640px;
+    height: 900px;
+    animation-name: course;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-play-state: paused;
+}
+
+@keyframes course {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2560px 0;
+    }
+}
+
+.ghost {
+    background-image: url(../img/img_personnages/spritesheet_fantome.png);
+    width: 500px;
+    height: 492px;
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(50);
+    animation-play-state: paused;
+}
+
+@keyframes shake {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -25100px 0;
+    }
+}
+
+.yeux {
+    background-image: url(../img/img_personnages/spritesheet_yeux_griboulli.png);
+    width: 450px;
+    height: 462px;
+    animation-name: blind;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(50);
+    animation-play-state: paused;
+}
+
+@keyframes blind {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -23100px 0;
+    }
+}
+
+body.is-scrolling .ghost {
+    animation-play-state: running;
+}
+
+body.is-scrolling .girl {
+    animation-play-state: running;
+}
+
+body.is-scrolling .yeux {
+    animation-play-state: running;
+}
