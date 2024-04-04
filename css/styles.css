@@ -146,6 +146,7 @@ header {
 }
 
 @media screen and (max-width: 1200px) and (min-width: 769px) {
+    
     .title {
         padding-top: 30%;
         font-size: 15vw;
