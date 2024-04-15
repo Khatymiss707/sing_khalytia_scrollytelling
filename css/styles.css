@@ -600,6 +600,100 @@ section {
     height: 100vh;
 }
 
+.fille_05 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_04 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_06 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.train_ecole {
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
+
+.bruitage_bam {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.arriere_plan_gris {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fille_tombe_03 {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.crayons {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.cube_a {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.cube_e {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.musique {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.radio {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.tableau {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+}
+
+.train_tombe_03 {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.texte07 {
+    position: relative;
+    z-index: 6;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
 /*-------------------------------------------------------------------------------------
 # Chapitre 6
 -------------------------------------------------------------------------------------*/
@@ -614,6 +708,76 @@ section {
     position: absolute;
     width: 100vw;
     height: 100vh;
+}
+
+.fille_03 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_02 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_01 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.baleine {
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
+
+.poisson {
+    position: absolute;
+    height: auto;
+    width: 80vw;
+}
+
+.train_aquarium {
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
+
+.thud01 {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.thud02 {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.thud03 {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.thud04 {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.texte08 {
+    position: relative;
+    z-index: 6;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
 }
 
 /*-------------------------------------------------------------------------------------
