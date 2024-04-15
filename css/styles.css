@@ -197,7 +197,113 @@ section {
 }
 
 #chapter01 {
-    background-image: linear-gradient(var(--noir) 10%, var(--blanc));
+    background-image: linear-gradient(var(--noir) 10%, var(--grisNoir));
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.ghost {
+    position: absolute;
+    background-image: url(../img/img_personnages/spritesheet_fantome.png);
+    width: 500px;
+    height: 492px;
+    bottom: 0px; 
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(50);
+    animation-play-state: paused;
+}
+
+@keyframes shake {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -25100px 0;
+    }
+}
+
+.texte01 {
+    padding: 5%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.yeux_fille_fermee {
+    position: absolute;
+    width: 50vw; 
+    height: auto; 
+}
+
+.yeux_fille_ouvert {
+    position: absolute;
+    width: 50vw; 
+    height: auto; 
+    padding-bottom: 2%;
+}
+
+.sueur_01 {
+    position: absolute;
+    width: 12vw; 
+    height: auto; 
+}
+
+.sueur_02 {
+    position: absolute;
+    width: 15vw; 
+    height: auto;
+}
+
+.sueur_03 {
+    position: absolute;
+    width: 20vw; 
+    height: auto;
+}
+
+.sueur_04 {
+    position: absolute;
+    width: 10vw; 
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px){
+
+    .texte01 {
+        padding: 7%;
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .yeux_fille_fermee {
+        position: absolute;
+        width: 54vw; 
+        height: 28vw; 
+    }
+    
+    .yeux_fille_ouvert {
+        position: absolute;
+        width: 54vw; 
+        height: 32vw; 
+        padding-bottom: 2%;
+    }
+
+    .texte01 {
+        padding: 7%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
 }
 
 /*-------------------------------------------------------------------------------------
@@ -205,8 +311,47 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter02 {
-    background-image: url("../img/img_arriere_plan/wagon.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.wagon_original {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.fille_couche {
+    position: absolute;
+    height: auto;
+    width: 20vw;
+}
+
+.fille_assise {
+    position: absolute;
+    height: auto;
+    width: 18vw;
+}
+
+.fille_debout {
+    position: absolute;
+    height: auto;
+    width: 20vw;
+}
+
+.texte02 {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 5%;
+    font-size: 2vw;
+}
+
+.train_wagon {
+    position: absolute;
+    height: auto;
+    width: 5vw; 
 }
 
 /*-------------------------------------------------------------------------------------
@@ -214,17 +359,229 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter03 {
-    background-image: url(../img/img_arriere_plan/wagon_perspective.png);
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
+    background-size: contain;
+    background-repeat: repeat;
 }
+
+.wagon_perspective {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.texte03 {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 5%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
+.texte04 {
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
+.texte05 {
+    position: relative;
+    z-index: 4;
+    text-align: left;
+    padding: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
+.fille_regarde_droite {
+    position: absolute;
+    width: 65vw; 
+    height: auto;
+}
+
+.arriere_porte {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.fantome_femme {
+    position: absolute;
+    width: 55vw;
+    height: auto;
+}
+
+.porte_fantome {
+    position: absolute;
+    width: 80vw;
+    height: auto;
+}
+
+.fille_regarde_gauche {
+    position: absolute;
+    width: 65vw; 
+    height: auto;
+}
+
+.porte {
+    position: absolute;
+    width: 80vw;
+    height: auto;
+}
+
+.main_fille_pousse {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.arriere_plan_gris {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fille_tombe_01 {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.train_tombe_01 {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+
 
 /*-------------------------------------------------------------------------------------
 # Chapitre 4
 -------------------------------------------------------------------------------------*/
 
 #chapter04 {
-    background-image: url(../img/img_arriere_plan/wagon_enfant.png);
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.texte06 {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
+.wagon_enfant {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ours_immobile {
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
+
+.fille_08 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_09 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.fille_07 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+}
+
+.train_chambre {
+    position: absolute;
+    height: auto;
+    width: 5vw;
+}
+
+.bruitage_thud {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+}
+
+.girl {
+    background-image: url(../img/img_personnages/spritesheet_fille.png);
+    width: 640px;
+    height: 900px;
+    animation-name: course;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-play-state: paused;
+}
+
+@keyframes course {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2560px 0;
+    }
+}
+
+.arriere_plan_gris {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fille_tombe_02 {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.triangulaire {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.ours_tombe {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.jeu_mobile {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.train_tombe_02 {
+    position: absolute;
+    width: 10vw;
+    height: auto;
+}
+
+.container02 {
+    margin-top: 4%;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -232,8 +589,15 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter05 {
-    background-image: url(../img/img_arriere_plan/wagon_ecole.png);
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.wagon_ecole {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -241,8 +605,15 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter06 {
-    background-image: url(../img/img_arriere_plan/wagon_aquarium.png);
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.wagon_aquarium {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -250,7 +621,7 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter07 {
-    background-color: var(--grisNoir);
+    background-image: url("../img/img_arriere_plan/arriere_plan_porte.jpg");
     background-size: cover;
 }
 
@@ -293,48 +664,6 @@ section {
 .scroll {
     height: 1500px;
     width: auto;
-}
-
-.girl {
-    background-image: url(../img/img_personnages/spritesheet_fille.png);
-    width: 640px;
-    height: 900px;
-    animation-name: course;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(4);
-    animation-play-state: paused;
-}
-
-@keyframes course {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -2560px 0;
-    }
-}
-
-.ghost {
-    background-image: url(../img/img_personnages/spritesheet_fantome.png);
-    width: 500px;
-    height: 492px;
-    animation-name: shake;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(50);
-    animation-play-state: paused;
-}
-
-@keyframes shake {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -25100px 0;
-    }
 }
 
 .yeux {
