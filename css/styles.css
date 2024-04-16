@@ -191,6 +191,7 @@ header {
 -------------------------------------------------------------------------------------*/
 
 section {
+    position: relative;
     width: 100vw;
     height: 100vh;
     border: solid 1px red;
@@ -198,7 +199,6 @@ section {
 
 #chapter01 {
     background-image: linear-gradient(var(--noir) 10%, var(--grisNoir));
-    position: relative;
 }
 
 .container {
@@ -207,13 +207,13 @@ section {
     margin-top: 10px;
 }
 
-
 .ghost {
     position: absolute;
     background-image: url(../img/img_personnages/spritesheet_fantome.png);
-    width: 500px;
-    height: 492px;
+    aspect-ratio: 1.02/1;
+    background-size: 100vw 100vh;
     bottom: 0px; 
+    opacity: 0;
     animation-name: shake;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -231,6 +231,28 @@ section {
     }
 }
 
+.yeux {
+    background-image: url(../img/img_personnages/spritesheet_yeux_griboulli.png);
+    width: 450px;
+    height: 462px;
+    opacity: 0;
+    animation-name: blind;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(50);
+    animation-play-state: paused;
+}
+
+@keyframes blind {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -23100px 0;
+    }
+}
+
 .texte01 {
     padding: 5%;
     text-align: center;
@@ -241,6 +263,7 @@ section {
     position: absolute;
     width: 50vw; 
     height: auto; 
+    opacity: 0;
 }
 
 .yeux_fille_ouvert {
@@ -248,30 +271,43 @@ section {
     width: 50vw; 
     height: auto; 
     padding-bottom: 2%;
+    opacity: 0;
 }
 
 .sueur_01 {
     position: absolute;
     width: 12vw; 
     height: auto; 
+    opacity: 0;
+    left: 13vw; 
+    top: 3vh; 
 }
 
 .sueur_02 {
     position: absolute;
     width: 15vw; 
     height: auto;
+    opacity: 0;
+    left: 20vw; 
+    top: 28vh;
 }
 
 .sueur_03 {
     position: absolute;
     width: 20vw; 
     height: auto;
+    opacity: 0;
+    left: 70vw; 
+    top: 24vh;
 }
 
 .sueur_04 {
     position: absolute;
     width: 10vw; 
     height: auto;
+    opacity: 0;
+    left: 46vw; 
+    top: 10vh;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
@@ -289,6 +325,7 @@ section {
         position: absolute;
         width: 54vw; 
         height: 28vw; 
+        opacity: 0;
     }
     
     .yeux_fille_ouvert {
@@ -296,6 +333,7 @@ section {
         width: 54vw; 
         height: 32vw; 
         padding-bottom: 2%;
+        opacity: 0;
     }
 
     .texte01 {
@@ -789,6 +827,34 @@ section {
     background-size: cover;
 }
 
+.texte09 {
+    position: relative;
+    z-index: 7;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+}
+
+.main_vide {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.train_jouet {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
+.main_etendu {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+}
+
 /*-------------------------------------------------------------------------------------
 # Chapitre 8
 -------------------------------------------------------------------------------------*/
@@ -798,6 +864,59 @@ section {
     background-size: cover;
 }
 
+.yeux_fille {
+    position: absolute;
+    width: 50vw; 
+    height: auto; 
+}
+
+.railles {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+.gazon {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+.mere_de_dos {
+    position: absolute;
+    width: 70vw; 
+    height: auto; 
+}
+
+.bras_mere {
+    position: absolute;
+    width: 70vw; 
+    height: auto; 
+}
+
+.bras_fille {
+    position: absolute;
+    width: 60vw; 
+    height: auto;
+}
+
+.reunion {
+    position: absolute;
+    width: 70vw; 
+    height: auto;
+}
+
+.texte10 {
+    position: relative;
+    z-index: 8;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    color: var(--noir);
+}
+
 /*-------------------------------------------------------------------------------------
 # Chapitre 9
 -------------------------------------------------------------------------------------*/
@@ -805,6 +924,23 @@ section {
 #chapter09 {
     background-color: var(--blanc);
     background-size: cover;
+}
+
+.calin {
+    position: absolute;
+    width: auto;
+    height: 100vh;
+}
+
+.texte11 {
+    position: relative;
+    z-index: 8;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    color: var(--noir);
 }
 
 /*-------------------------------------------------------------------------------------
@@ -828,27 +964,6 @@ section {
 .scroll {
     height: 1500px;
     width: auto;
-}
-
-.yeux {
-    background-image: url(../img/img_personnages/spritesheet_yeux_griboulli.png);
-    width: 450px;
-    height: 462px;
-    animation-name: blind;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(50);
-    animation-play-state: paused;
-}
-
-@keyframes blind {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -23100px 0;
-    }
 }
 
 body.is-scrolling .ghost {
