@@ -210,8 +210,9 @@ section {
 .ghost {
     position: absolute;
     background-image: url(../img/img_personnages/spritesheet_fantome.png);
-    aspect-ratio: 1.02/1;
-    background-size: 100vw 100vh;
+    aspect-ratio: 500/492;
+    background-size: 4901% 100%;
+    width: 35vw; 
     bottom: 0px; 
     opacity: 0;
     animation-name: shake;
@@ -233,8 +234,9 @@ section {
 
 .yeux {
     background-image: url(../img/img_personnages/spritesheet_yeux_griboulli.png);
-    width: 450px;
-    height: 462px;
+    aspect-ratio: 450/462;
+    width: 35vw;
+    background-size: 4510% 100%;
     opacity: 0;
     animation-name: blind;
     animation-duration: 1s;
@@ -257,6 +259,7 @@ section {
     padding: 5%;
     text-align: center;
     font-size: 2vw;
+    opacity: 0;
 }
 
 .yeux_fille_fermee {
@@ -310,40 +313,6 @@ section {
     top: 10vh;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 769px){
-
-    .texte01 {
-        padding: 7%;
-        font-size: 3vw;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    .yeux_fille_fermee {
-        position: absolute;
-        width: 54vw; 
-        height: 28vw; 
-        opacity: 0;
-    }
-    
-    .yeux_fille_ouvert {
-        position: absolute;
-        width: 54vw; 
-        height: 32vw; 
-        padding-bottom: 2%;
-        opacity: 0;
-    }
-
-    .texte01 {
-        padding: 7%;
-        text-align: center;
-        font-size: 4vw;
-    }
-
-}
-
 /*-------------------------------------------------------------------------------------
 # Chapitre 2
 -------------------------------------------------------------------------------------*/
@@ -352,7 +321,17 @@ section {
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: contain;
     background-repeat: repeat;
+    animation-name: wagonMouvement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
 }
+ 
+  @keyframes wagonMouvement {
+    from { background-position: 0 0; }
+    to { background-position: -2505px 0; }
+  }
 
 .wagon_original {
     position: absolute;
@@ -364,18 +343,28 @@ section {
     position: absolute;
     height: auto;
     width: 20vw;
+    left: 30vw; 
+    bottom: 20vh;
+    opacity: 0;
 }
 
 .fille_assise {
     position: absolute;
     height: auto;
     width: 18vw;
+    left: 30vw; 
+    bottom: 8vh;
+    opacity: 0;
 }
 
 .fille_debout {
     position: absolute;
     height: auto;
     width: 20vw;
+    left: 35vw; 
+    bottom: 0.5vh;
+    opacity: 0;
+    margin-bottom: -30px;
 }
 
 .texte02 {
@@ -384,12 +373,83 @@ section {
     text-align: center;
     padding: 5%;
     font-size: 2vw;
+    opacity: 0; 
 }
 
 .train_wagon {
     position: absolute;
     height: auto;
-    width: 5vw; 
+    width: 5vw;
+    left: 50vw; 
+    bottom: 27vh;
+    opacity: 0; 
+}
+
+@media screen and (max-width: 1100px) and (min-width: 700px){
+    #chapter02 {
+        height: 70vh; 
+    }
+
+    .wagon_original {
+        height: 70vh; 
+    }
+
+    .train_wagon {
+        width: 7vw;
+        bottom: 18vh;
+    }
+
+    .fille_couche {
+        left: 30vw; 
+        bottom: 13vh;
+    }
+    
+    .fille_assise {
+        left: 30vw; 
+        bottom: 6vh;
+    }
+    
+    .fille_debout {
+        left: 35vw; 
+        bottom: 1vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #chapter02 {
+        height: 50vh; 
+    }
+
+    .wagon_original {
+        height: 50vh; 
+    }
+
+    .train_wagon {
+        width: 7vw;
+        bottom: 13vh;
+    }
+
+    .texte02 {
+        padding: 5%;
+        font-size: 3vw;
+        opacity: 0; 
+    }
+
+    .fille_couche {
+        left: 30vw; 
+        bottom: 10vh;
+    }
+    
+    .fille_assise {
+        left: 30vw; 
+        bottom: 6vh;
+    }
+    
+    .fille_debout {
+        left: 35vw; 
+        bottom: 1vh;
+        margin-bottom: 5px;
+    }
 }
 
 /*-------------------------------------------------------------------------------------
@@ -400,7 +460,18 @@ section {
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: contain;
     background-repeat: repeat;
+    animation-name: wagonMouvement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    overflow: hidden;
 }
+ 
+  @keyframes wagonMouvement {
+    from { background-position: 0 0; }
+    to { background-position: -2505px 0; }
+  }
 
 .wagon_perspective {
     position: absolute;
@@ -415,6 +486,7 @@ section {
     padding: 5%;
     padding-bottom: 0%;
     font-size: 2vw;
+    opacity: 0;
 }
 
 .texte04 {
@@ -425,6 +497,7 @@ section {
     padding-top: 0%;
     padding-bottom: 0%;
     font-size: 2vw;
+    opacity: 0;
 }
 
 .texte05 {
@@ -435,24 +508,32 @@ section {
     padding-top: 0%;
     padding-bottom: 0%;
     font-size: 2vw;
+    opacity: 0;
 }
 
 .fille_regarde_droite {
     position: absolute;
     width: 65vw; 
     height: auto;
+    bottom: 0;
+    opacity: 0;
 }
 
 .arriere_porte {
     position: absolute;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
+    opacity: 0;  
 }
 
 .fantome_femme {
     position: absolute;
     width: 55vw;
     height: auto;
+    opacity: 0;
+    left: 22vw; 
+    transform: scale(0.2);
+    bottom: -60vh; 
 }
 
 .porte_fantome {
@@ -465,36 +546,51 @@ section {
     position: absolute;
     width: 65vw; 
     height: auto;
+    opacity: 0;
+    bottom: 0;
 }
 
 .porte {
     position: absolute;
     width: 80vw;
     height: auto;
+    opacity: 0;
+    left: 10vw; 
 }
 
 .main_fille_pousse {
     position: absolute;
     width: 50vw;
     height: auto;
+    opacity: 0;
+    left: 26vw;
+    bottom: 0; 
 }
 
 .arriere_plan_gris {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    opacity: 0;
 }
 
 .fille_tombe_01 {
     position: absolute;
     width: 50vw;
     height: auto;
+    opacity: 0;
+    left: 20vw; 
+    top: -5vh;
 }
 
 .train_tombe_01 {
     position: absolute;
     width: 10vw;
     height: auto;
+    left: 70vw; 
+    top: 5vh;
+    transform: rotate(30deg);
+    opacity: 0; 
 }
 
 
@@ -507,9 +603,20 @@ section {
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: contain;
     background-repeat: repeat-x;
+    animation-name: wagonMouvement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    overflow: hidden;
 }
+ 
+  @keyframes wagonMouvement {
+    from { background-position: 0 0; }
+    to { background-position: -2505px 0; }
+  }
 
-.texte06 {
+.texte0601 {
     position: relative;
     z-index: 5;
     text-align: left;
@@ -517,6 +624,51 @@ section {
     padding-top: 1%;
     padding-bottom: 0%;
     font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0602 {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0603 {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0604 {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0605 {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
 }
 
 .wagon_enfant {
@@ -529,24 +681,35 @@ section {
     position: absolute;
     height: auto;
     width: 5vw;
+    left: 60vw; 
+    top: 73vh; 
 }
 
 .fille_08 {
     position: absolute;
     height: auto;
     width: 30vw;
+    opacity: 0;
+    left: 56vw;
+    top: 40vh;  
 }
 
 .fille_09 {
     position: absolute;
     height: auto;
-    width: 30vw;
+    width: 25vw;
+    opacity: 0;
+    left: 30vw;
+    top: 55vh;
 }
 
 .fille_07 {
     position: absolute;
     height: auto;
     width: 30vw;
+    opacity: 0;
+    left: 1vw;
+    top: 50vh;
 }
 
 .train_chambre {
@@ -592,144 +755,61 @@ section {
     position: absolute;
     width: 50vw;
     height: auto;
+    left: 25vw;
+    opacity: 0;  
 }
 
 .triangulaire {
     position: absolute;
+    width: 6vw;
+    height: auto;
+    left: 60vw; 
+    opacity: 0;
+}
+
+.triangulaire02 {
+    position: absolute;
     width: 10vw;
     height: auto;
+    left: 88vw; 
+    opacity: 0;
 }
 
 .ours_tombe {
     position: absolute;
-    width: 10vw;
+    width: 13vw;
     height: auto;
+    opacity: 0;
+    left: 10vh; 
 }
 
 .jeu_mobile {
     position: absolute;
-    width: 10vw;
+    width: 20vw;
     height: auto;
+    left: 80vw;
+    transform: rotate(50deg);
+    opacity: 0;
 }
 
 .train_tombe_02 {
     position: absolute;
-    width: 10vw;
+    width: 13vw;
     height: auto;
+    top: 5vh; 
+    left: 75vw; 
+    opacity: 0; 
+}
+
+.arriere_plan_gris_02 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
 }
 
 .container02 {
     margin-top: 4%;
-}
-
-/*-------------------------------------------------------------------------------------
-# Chapitre 5
--------------------------------------------------------------------------------------*/
-
-#chapter05 {
-    background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
-    background-size: contain;
-    background-repeat: repeat-x;
-}
-
-.wagon_ecole {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-.fille_05 {
-    position: absolute;
-    height: auto;
-    width: 30vw;
-}
-
-.fille_04 {
-    position: absolute;
-    height: auto;
-    width: 30vw;
-}
-
-.fille_06 {
-    position: absolute;
-    height: auto;
-    width: 30vw;
-}
-
-.train_ecole {
-    position: absolute;
-    height: auto;
-    width: 5vw;
-}
-
-.bruitage_bam {
-    position: absolute;
-    height: auto;
-    width: 10vw;
-}
-
-.arriere_plan_gris {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
-.fille_tombe_03 {
-    position: absolute;
-    width: 50vw;
-    height: auto;
-}
-
-.crayons {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-}
-
-.cube_a {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-}
-
-.cube_e {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-}
-
-.musique {
-    position: absolute;
-    width: 50vw;
-    height: auto;
-}
-
-.radio {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-}
-
-.tableau {
-    position: absolute;
-    width: 20vw;
-    height: auto;
-}
-
-.train_tombe_03 {
-    position: absolute;
-    width: 10vw;
-    height: auto;
-}
-
-.texte07 {
-    position: relative;
-    z-index: 6;
-    text-align: left;
-    padding: 5%;
-    padding-top: 1%;
-    padding-bottom: 0%;
-    font-size: 2vw;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -740,7 +820,18 @@ section {
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: contain;
     background-repeat: repeat-x;
+    animation-name: wagonMouvement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    overflow: hidden;
 }
+ 
+  @keyframes wagonMouvement {
+    from { background-position: 0 0; }
+    to { background-position: -2505px 0; }
+  }
 
 .wagon_aquarium {
     position: absolute;
@@ -847,6 +938,7 @@ section {
     position: absolute;
     width: 50vw;
     height: auto;
+    opacity: 0; 
 }
 
 .main_etendu {
@@ -930,9 +1022,11 @@ section {
     position: absolute;
     width: auto;
     height: 100vh;
+    left: 17vw; 
+    opacity: 0;
 }
 
-.texte11 {
+.texte1101 {
     position: relative;
     z-index: 8;
     text-align: left;
@@ -941,6 +1035,51 @@ section {
     padding-bottom: 0%;
     font-size: 2vw;
     color: var(--noir);
+    opacity: 0;
+}
+
+.texte1102 {
+    position: relative;
+    z-index: 8;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    color: var(--noir);
+    opacity: 0;
+}
+
+.texte1103 {
+    position: relative;
+    z-index: 8;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    color: var(--noir);
+    opacity: 0;
+}
+
+.texte1104 {
+    position: relative;
+    z-index: 8;
+    text-align: left;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    color: var(--noir);
+    opacity: 0;
+}
+
+.background_noir {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--noir);
+    opacity: 0;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -955,6 +1094,15 @@ section {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+
+.footer {
+    color: var(--noir);
+}
+
+footer {
+    padding-top: 10px;
+    background-color: var(--blanc);
 }
 
 /*-------------------------------------------------------------------------------------
