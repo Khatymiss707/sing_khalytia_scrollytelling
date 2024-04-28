@@ -70,6 +70,8 @@ let animChapitre03 = gsap.timeline()
 let animChapitre04 = gsap.timeline()
 .to(".texte0601", {duration: 3, opacity: 1}, "+=1")
 .to(".fille_08", {duration: 2, opacity: 1})
+.to(".train_chambre", {duration: 2, opacity: 1}, "<")
+.to(".mere_01", {duration: 2, opacity: 1}, "<")
 .to(".texte0602", {duration: 3, opacity: 1})
 .to(".fille_09", {duration: 2, opacity: 1})
 .to(".texte0603", {duration: 3, opacity: 1})
@@ -83,6 +85,13 @@ let animChapitre04 = gsap.timeline()
 .to(".triangulaire02", {duration: 1.2, opacity: 1, y: "70vh", rotate: -30}, "-=1")
 .to(".ours_tombe", {duration: 1, opacity: 1, y: "75vh", rotate: 30}, "-=0.5")
 .to(".texte0605", {duration: 3, opacity: 1}); 
+
+let animChapitre05 = gsap.timeline()
+.to(".fille_03", {duration: 2, opacity: 1})
+.to(".train_aquarium", {duration: 2, opacity: 1}, "<")
+.to(".mere_03", {duration: 2, opacity: 1}, "<")
+.to(".fille_02", {duration: 2, opacity: 1})
+.to(".fille_01", {duration: 2, opacity: 1}); 
 
 let animChapitre09 = gsap.timeline()
 .to(".calin", {duration: 3, opacity: 1})

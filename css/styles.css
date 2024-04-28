@@ -195,6 +195,7 @@ section {
     width: 100vw;
     height: 100vh;
     border: solid 1px red;
+    overflow: hidden;
 }
 
 #chapter01 {
@@ -685,6 +686,15 @@ section {
     top: 73vh; 
 }
 
+.mere_01 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+    opacity: 0;
+    left: 10vw;
+    top: 50vh; 
+}
+
 .fille_08 {
     position: absolute;
     height: auto;
@@ -697,10 +707,10 @@ section {
 .fille_09 {
     position: absolute;
     height: auto;
-    width: 25vw;
+    width: 23vw;
     opacity: 0;
-    left: 30vw;
-    top: 55vh;
+    left: 38vw;
+    top: 60vh;
 }
 
 .fille_07 {
@@ -708,14 +718,17 @@ section {
     height: auto;
     width: 30vw;
     opacity: 0;
-    left: 1vw;
-    top: 50vh;
+    left: -5vw;
+    top: 55vh;
 }
 
 .train_chambre {
     position: absolute;
     height: auto;
-    width: 5vw;
+    width: 7vw;
+    opacity: 0;
+    left: 85vw;
+    top: 86vh;
 }
 
 .bruitage_thud {
@@ -726,8 +739,8 @@ section {
 
 .girl {
     background-image: url(../img/img_personnages/spritesheet_fille.png);
-    width: 640px;
-    height: 900px;
+    aspect-ratio: 640/900;
+    width: 10vw;
     animation-name: course;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -839,22 +852,35 @@ section {
     height: 100vh;
 }
 
+.mere_03 {
+    position: absolute;
+    height: auto;
+    width: 30vw;
+    opacity: 0;
+    left: 10vw;
+    top: 50vh; 
+    opacity: 0;
+}
+
 .fille_03 {
     position: absolute;
     height: auto;
     width: 30vw;
+    opacity: 0;
 }
 
 .fille_02 {
     position: absolute;
     height: auto;
     width: 30vw;
+    opacity: 0;
 }
 
 .fille_01 {
     position: absolute;
     height: auto;
     width: 30vw;
+    opacity: 0;
 }
 
 .baleine {
@@ -873,6 +899,8 @@ section {
     position: absolute;
     height: auto;
     width: 5vw;
+    opacity: 0;
+    
 }
 
 .thud01 {
@@ -902,7 +930,7 @@ section {
 .texte08 {
     position: relative;
     z-index: 6;
-    text-align: left;
+    text-align: right;
     padding: 5%;
     padding-top: 1%;
     padding-bottom: 0%;
@@ -939,6 +967,8 @@ section {
     width: 50vw;
     height: auto;
     opacity: 0; 
+    left: 25vw; 
+    bottom: 5vh; 
 }
 
 .main_etendu {
