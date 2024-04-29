@@ -878,7 +878,7 @@ section {
     height: auto;
     width: 30vw;
     opacity: 0;
-    left: 0vw;
+    left: 100vw;
     top: 70vh;  
 }
 
@@ -965,27 +965,35 @@ section {
     position: absolute;
     height: auto;
     width: 10vw;
+    left: -10vw;
+    top: 12vh; 
 }
 
 .thud02 {
     position: absolute;
     height: auto;
     width: 10vw;
+    left: -10vw;
+    top: 27vh; 
 }
 
 .thud03 {
     position: absolute;
     height: auto;
     width: 10vw;
+    left: -10vw;
+    top: 42vh; 
 }
 
 .thud04 {
     position: absolute;
     height: auto;
     width: 10vw;
+    left: -10vw;
+    top: 57vh; 
 }
 
-.texte08 {
+.texte0801 {
     position: relative;
     z-index: 6;
     text-align: right;
@@ -993,6 +1001,29 @@ section {
     padding-top: 1%;
     padding-bottom: 0%;
     font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0802 {
+    position: relative;
+    z-index: 6;
+    text-align: right;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.texte0803 {
+    position: relative;
+    z-index: 6;
+    text-align: right;
+    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    font-size: 2vw;
+    opacity: 0;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -1007,7 +1038,7 @@ section {
 .texte09 {
     position: relative;
     z-index: 7;
-    text-align: left;
+    text-align: right;
     padding: 5%;
     padding-top: 1%;
     padding-bottom: 0%;
@@ -1047,54 +1078,109 @@ section {
 .yeux_fille {
     position: absolute;
     width: 50vw; 
-    height: auto; 
+    left: 25vw; 
+    top: 15vh; 
+    height: auto;
+    opacity: 0;  
 }
 
 .railles {
     position: absolute;
     width: 100vw;
     height: auto;
+    opacity: 0;
+    top: 40vw; 
+}
+
+.nuage {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    opacity: 0; 
 }
 
 .gazon {
     position: absolute;
-    width: 100vw;
+    width: 55vw;
     height: auto;
+    opacity: 0;
+    top: 40vw;
 }
 
 .mere_de_dos {
     position: absolute;
     width: 70vw; 
     height: auto; 
+    opacity: 0;
+    top: 5vw;
 }
 
 .bras_mere {
     position: absolute;
-    width: 70vw; 
-    height: auto; 
+    width: 75vw; 
+    height: auto;
+    opacity: 0; 
+    right: -30vw;
+    top: 2vh; 
 }
 
 .bras_fille {
     position: absolute;
-    width: 60vw; 
+    width: 70vw; 
     height: auto;
+    opacity: 0;
+    top: 10vh;
+    left: -15vw;  
 }
 
 .reunion {
     position: absolute;
     width: 70vw; 
     height: auto;
+    opacity: 0;
+    top: 10vh;
+    left: 15vw;
 }
 
 .texte10 {
-    position: relative;
-    z-index: 8;
-    text-align: left;
+    position: absolute;
+    z-index: 8; 
     padding: 5%;
     padding-top: 1%;
     padding-bottom: 0%;
     font-size: 2vw;
     color: var(--noir);
+    left: 22vw; 
+    opacity: 0;
+}
+
+.un {
+    left: 35vw;
+    color: var(--blanc);
+}
+
+.trois {
+    left: 20vw;
+}
+
+.quatre {
+    left: 27vw;
+}
+
+.cinq {
+    left: 35vw;
+}
+
+.six {
+    left: 25vw;
+}
+
+.background_noir01 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--noir);
+    opacity: 1;
 }
 
 /*-------------------------------------------------------------------------------------
