@@ -25,6 +25,8 @@ gsap.from('.arrow', {
 let animChapitre01 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true,
+  toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '2500% top',
   trigger: '#chapter01',
@@ -36,18 +38,25 @@ let animChapitre01 = gsap.timeline( {scrollTrigger: {
 .to(".ghost", {duration: 1, opacity: 1}, "-=0.5")
 .to(".ghost", {duration: 0.25, opacity: 0}, "+=3")
 .to(".yeux_fille_fermee", {duration: 1, opacity: 1}, "-=0.05")
-.to(".sueur_01", { duration: 2, y: "35vh", opacity: 1, repeat: -1}, "<")
-.to(".sueur_02", { duration: 3, y: "40vh", opacity: 1, repeat: -1}, "<")
-.to(".sueur_03", { duration: 1.5, y: "20vh", opacity: 1, repeat: -1}, "<")
-.to(".sueur_04", { duration: 3.5, y: "25vh", opacity: 1, repeat: -1}, "<")
+.to(".sueur_01", { duration: 2, opacity: 1}, "<")
+.to(".sueur_02", { duration: 3, opacity: 1}, "<")
+.to(".sueur_03", { duration: 1.5, opacity: 1}, "<")
+.to(".sueur_04", { duration: 3.5, opacity: 1}, "<")
 .to(".yeux_fille_fermee", {duration: 0.5, opacity: 0})
 .to(".yeux_fille_ouvert", {duration: 0.5, opacity: 1}, "-=0.05"); 
+
+gsap.to(".sueur_01", { duration: 2, y: "35vh", repeat: -1}, "<")
+gsap.to(".sueur_02", { duration: 3, y: "40vh", repeat: -1}, "<")
+gsap.to(".sueur_03", { duration: 1.5, y: "20vh", repeat: -1}, "<")
+gsap.to(".sueur_04", { duration: 3.5, y: "25vh", repeat: -1}, "<")
 
 let animChapitre02 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true, 
   start: 'top top',
   end: '1000% top',
+  toggleActions: 'restart complete reverse reset',
   trigger: '#chapter02',
 }
 }); 
@@ -64,6 +73,8 @@ animChapitre02.to(".texte02", {duration: 3, opacity: 1})
 let animChapitre03 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true,
+  toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '1500% top',
   trigger: '#chapter03',
@@ -95,6 +106,8 @@ animChapitre03.to(".texte03", {duration: 3, opacity: 1})
 let animChapitre04 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true,
+  toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '1700% top',
   trigger: '#chapter04',
@@ -122,6 +135,8 @@ animChapitre04.to(".texte0601", {duration: 3, opacity: 1}, "+=1")
 let animChapitre05 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true,
+  toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '3000% top',
   trigger: '#chapter06',
@@ -133,11 +148,6 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".bulle02", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle03", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle04", {duration: 2, opacity: 0.5}, "<")
-.to(".bulle_train", {duration: 1.5, y: "1vh", yoyo: true, repeat: -1}, "<")
-.to(".bulle01", {duration: 1.5, y: "1vh", yoyo: true, repeat: -1}, "<")
-.to(".bulle02", {duration: 2.5, y: "2vh", yoyo: true, repeat: -1}, "<")
-.to(".bulle03", {duration: 2, y: "3vh", yoyo: true, repeat: -1}, "<")
-.to(".bulle04", {duration: 1, y: "1.5vh", yoyo: true, repeat: -1}, "<")
 .to(".texte0801", {duration: 3, opacity: 1})
 .to(".baleine", {duration: 25, x: "-65vw", y: "65vh", rotate: -20}, "-=2")
 .to(".fille_03", {duration: 2, opacity: 1}, "-=20")
@@ -148,9 +158,7 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".fille_02", {duration: 4, rotate: 60}, "<")
 .to(".texte0802", {duration: 3, opacity: 1}) 
 .to(".fille_01", {duration: 2, opacity: 1})
-.to(".fille_01", {duration: 2.5, y: "1vh", yoyo: true, repeat: -1}, "<") 
 .to(".train_aquarium", {duration: 2, opacity: 1}, "<")
-.to(".train_aquarium", {duration: 2, y: "1.5vh", yoyo: true, repeat: -1}, "<")
 .to(".texte0803", {duration: 3, opacity: 1})
 .to(".thud01", {duration: 0.5, x: "20vw", rotate: 20})
 .to(".thud02", {duration: 0.5, x: "28vw", rotate: -10})
@@ -171,9 +179,19 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".thud04", {duration: 2, opacity: 0}, "<")
 .to(".girl", {duration: 5, x: "113vw"}, "<"); 
 
+gsap.to(".bulle_train", {duration: 1.5, y: "1vh", yoyo: true, repeat: -1}, "<")
+gsap.to(".bulle01", {duration: 1.5, y: "1vh", yoyo: true, repeat: -1}, "<")
+gsap.to(".bulle02", {duration: 2.5, y: "2vh", yoyo: true, repeat: -1}, "<")
+gsap.to(".bulle03", {duration: 2, y: "3vh", yoyo: true, repeat: -1}, "<")
+gsap.to(".bulle04", {duration: 1, y: "1.5vh", yoyo: true, repeat: -1}, "<")
+gsap.to(".fille_01", {duration: 2.5, y: "1vh", yoyo: true, repeat: -1}, "<") 
+gsap.to(".train_aquarium", {duration: 2, y: "1.5vh", yoyo: true, repeat: -1}, "<")
+
 let animChapitre07 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
+  scrub: true,
+  toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '2300% top',
   trigger: '#chapter07',
@@ -199,7 +217,9 @@ animChapitre07.to(".porte02", {duration: 3, opacity: 1})
 
 let animChapitre08 = gsap.timeline( {scrollTrigger: {
   markers: true,
-  pin: true, 
+  pin: true,
+  scrub: true,
+  toggleActions: 'restart complete reverse reset', 
   start: 'top top',
   end: '2300% top',
   trigger: '#chapter08',
@@ -236,7 +256,9 @@ animChapitre08.to(".yeux_fille", {duration: 3, opacity: 1})
 
 let animChapitre09 = gsap.timeline( {scrollTrigger: {
   markers: true,
-  pin: true, 
+  pin: true,
+  scrub: true,
+  toggleActions: 'restart complete reverse reset', 
   start: 'top top',
   end: '1000% top',
   trigger: '#chapter09',

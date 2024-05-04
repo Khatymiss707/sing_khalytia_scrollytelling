@@ -385,73 +385,6 @@ section {
     opacity: 0; 
 }
 
-@media screen and (max-width: 1100px) and (min-width: 700px){
-    #chapter02 {
-        height: 70vh; 
-    }
-
-    .wagon_original {
-        height: 70vh; 
-    }
-
-    .train_wagon {
-        width: 7vw;
-        bottom: 18vh;
-    }
-
-    .fille_couche {
-        left: 30vw; 
-        bottom: 13vh;
-    }
-    
-    .fille_assise {
-        left: 30vw; 
-        bottom: 6vh;
-    }
-    
-    .fille_debout {
-        left: 35vw; 
-        bottom: 1vh;
-    }
-}
-
-@media screen and (max-width: 700px){
-    #chapter02 {
-        height: 50vh; 
-    }
-
-    .wagon_original {
-        height: 50vh; 
-    }
-
-    .train_wagon {
-        width: 7vw;
-        bottom: 13vh;
-    }
-
-    .texte02 {
-        padding: 5%;
-        font-size: 3vw;
-        opacity: 0; 
-    }
-
-    .fille_couche {
-        left: 30vw; 
-        bottom: 10vh;
-    }
-    
-    .fille_assise {
-        left: 30vw; 
-        bottom: 6vh;
-    }
-    
-    .fille_debout {
-        left: 35vw; 
-        bottom: 1vh;
-        margin-bottom: 5px;
-    }
-}
-
 /*-------------------------------------------------------------------------------------
 # Chapitre 3
 -------------------------------------------------------------------------------------*/
@@ -556,6 +489,7 @@ section {
     height: auto;
     opacity: 0;
     left: 10vw; 
+    bottom: 0;
 }
 
 .main_fille_pousse {
@@ -592,8 +526,6 @@ section {
     transform: rotate(30deg);
     opacity: 0; 
 }
-
-
 
 /*-------------------------------------------------------------------------------------
 # Chapitre 4
@@ -1115,6 +1047,7 @@ section {
     height: auto;
     opacity: 0;
     left: 10vw; 
+    bottom: 0;
 }
 
 .ghost02 {
@@ -1157,7 +1090,7 @@ section {
     width: 100vw;
     height: auto;
     opacity: 0;
-    top: 40vw; 
+    bottom: 0;
 }
 
 .nuage {
@@ -1172,7 +1105,7 @@ section {
     width: 55vw;
     height: auto;
     opacity: 0;
-    top: 40vw;
+    bottom: 0;
 }
 
 .mere_de_dos {
@@ -1180,7 +1113,7 @@ section {
     width: 70vw; 
     height: auto; 
     opacity: 0;
-    top: 5vw;
+    bottom: 0;
 }
 
 .bras_mere {
@@ -1189,7 +1122,7 @@ section {
     height: auto;
     opacity: 0; 
     right: -30vw;
-    top: 2vh; 
+    bottom: 0; 
 }
 
 .bras_fille {
@@ -1197,7 +1130,7 @@ section {
     width: 70vw; 
     height: auto;
     opacity: 0;
-    top: 10vh;
+    bottom: 0;
     left: -15vw;  
 }
 
@@ -1206,8 +1139,8 @@ section {
     width: 70vw; 
     height: auto;
     opacity: 0;
-    top: 10vh;
     left: 15vw;
+    bottom: 0;
 }
 
 .texte10 {
