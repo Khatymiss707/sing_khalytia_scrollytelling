@@ -318,7 +318,6 @@ section {
     opacity: 0;
     left: 46vw; 
     top: 10vh;
->>>>>>> Stashed changes
 }
 
 /*-------------------------------------------------------------------------------------
@@ -326,10 +325,6 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter02 {
-<<<<<<< Updated upstream
-    background-image: url("../img/img_arriere_plan/wagon.png");
-    background-size: cover;
-=======
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: cover;
     background-repeat: repeat;
@@ -462,7 +457,6 @@ section {
         bottom: 1vh;
         margin-bottom: 5px;
     }
->>>>>>> Stashed changes
 }
 
 /*-------------------------------------------------------------------------------------
@@ -470,11 +464,6 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter03 {
-<<<<<<< Updated upstream
-    background-image: url(../img/img_arriere_plan/wagon_perspective.png);
-    background-size: cover;
-}
-=======
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: cover;
     background-repeat: repeat;
@@ -614,17 +603,13 @@ section {
 }
 
 
->>>>>>> Stashed changes
-
 /*-------------------------------------------------------------------------------------
 # Chapitre 4
 -------------------------------------------------------------------------------------*/
 
 #chapter04 {
-<<<<<<< Updated upstream
     background-image: url(../img/img_arriere_plan/wagon_enfant.png);
     background-size: cover;
-=======
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: cover;
     background-repeat: repeat-x;
@@ -650,7 +635,6 @@ section {
     padding-bottom: 0%;
     font-size: 2vw;
     opacity: 0;
->>>>>>> Stashed changes
 }
 
 /*-------------------------------------------------------------------------------------
@@ -667,10 +651,8 @@ section {
 -------------------------------------------------------------------------------------*/
 
 #chapter06 {
-<<<<<<< Updated upstream
     background-image: url(../img/img_arriere_plan/wagon_aquarium.png);
     background-size: cover;
-=======
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: cover;
     background-repeat: repeat-x;
@@ -865,7 +847,6 @@ section {
     padding-bottom: 0%;
     font-size: 2vw;
     opacity: 0;
->>>>>>> Stashed changes
 }
 
 /*-------------------------------------------------------------------------------------
@@ -877,8 +858,6 @@ section {
     background-size: cover;
 }
 
-<<<<<<< Updated upstream
-=======
 .texte0901 {
     position: relative;
     z-index: 7;
@@ -976,7 +955,6 @@ section {
     animation-play-state: paused;
 }
 
->>>>>>> Stashed changes
 /*-------------------------------------------------------------------------------------
 # Chapitre 8
 -------------------------------------------------------------------------------------*/
@@ -1098,7 +1076,6 @@ section {
     opacity: 1;
 }
 
->>>>>>> Stashed changes
 /*-------------------------------------------------------------------------------------
 # Chapitre 9
 -------------------------------------------------------------------------------------*/
@@ -1108,8 +1085,6 @@ section {
     background-size: cover;
 }
 
-<<<<<<< Updated upstream
-=======
 .calin {
     position: absolute;
     width: auto;
@@ -1184,7 +1159,6 @@ section {
     bottom: 5vh; 
 }
 
->>>>>>> Stashed changes
 /*-------------------------------------------------------------------------------------
 # Footer
 -------------------------------------------------------------------------------------*/

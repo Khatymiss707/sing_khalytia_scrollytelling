@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
-=======
 gsap.registerPlugin(ScrollTrigger);
->>>>>>> Stashed changes
 
 //ANIMATION TIMER
 let scrollTimer; 
@@ -24,9 +21,6 @@ gsap.from('.arrow', {
   yoyo: true,
   y: '4%',
 });
-<<<<<<< Updated upstream
-=======
-
 
 let animChapitre01 = gsap.timeline( {scrollTrigger: {
   markers: true,
@@ -261,4 +255,3 @@ animChapitre09.to(".calin", {duration: 3, opacity: 1})
 .to(".calin", {duration: 3, opacity: 0})
 .to(".background_noir", {duration: 3, opacity: 1})
 .to(".train_jouet", {duration: 3, opacity: 1})
->>>>>>> Stashed changes
