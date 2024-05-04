@@ -23,7 +23,8 @@
       </div>
       <div class="arrowText">
         <svg class="arrow" fill="#FFFFFF" height="600px" width="600px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+            <path class="eye" d="M243.65527,126.37561c-.33886-.7627-8.51172-18.8916-26.82715-37.208-16.957-16.96-46.13281-37.17578-88.82812-37.17578S56.12891,72.20764,39.17188,89.1676c-18.31543,18.31641-26.48829,36.44531-26.82715,37.208a3.9975,3.9975,0,0,0,0,3.249c.33886.7627,8.51269,18.88672,26.82715,37.19922,16.957,16.95606,46.13378,37.168,88.82812,37.168s71.87109-20.21191,88.82812-37.168c18.31446-18.3125,26.48829-36.43652,26.82715-37.19922A3.9975,3.9975,0,0,0,243.65527,126.37561Zm-32.6914,34.999C187.88965,184.34534,159.97656,195.99182,128,195.99182s-59.88965-11.64648-82.96387-34.61719a135.65932,135.65932,0,0,1-24.59277-33.375A135.63241,135.63241,0,0,1,45.03711,94.61584C68.11133,71.64123,96.02344,59.99182,128,59.99182s59.88867,11.64941,82.96289,34.624a135.65273,135.65273,0,0,1,24.59375,33.38379A135.62168,135.62168,0,0,1,210.96387,161.37463ZM128,84.00061a44,44,0,1,0,44,44A44.04978,44.04978,0,0,0,128,84.00061Zm0,80a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,164.00061Z"/>
+            <path class="fleche" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
             c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
             s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
         </svg>
@@ -42,6 +43,16 @@
           src="./img/img_arriere_plan/exterieur_wagon.jpg"
         />
       </div>
+      <ul class="technique-gsap"> 
+        <li>Animation fleche en boucle (translate)</li> 
+        <li>scrollTrigger 
+            <ul> 
+                <li>trigger= header</li>
+                <li>Morph fleche en eye</li>
+                <li>Opacité fleche</li> 
+            </ul> 
+        </li> 
+    </ul>
     </header>
     <main>
 
@@ -174,11 +185,6 @@
       </section>
 
       <section id="chapter06">
-        <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 
-        width="200" height="200" version="1.1" id="svg4534" sodipodi:docname="Circle (transparent).svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-        <path fill="#F9F9F9" d="M0,0v200h200v-200h-200zm100,1c54.68,0,99,44.324,99,99,0,54.68-44.32,99-99,99-54.676,0-99-44.32-99-99,0-54.676,44.324-99,99-99z" id="path4530" style="fill:none" />
-        <circle r="99" stroke="#000" cy="100" cx="100" stroke-width="1" fill="none" id="circle4532" />
-        </svg>
         <img src="./img/img_elements_visuels/baleine.png" class="baleine" alt="baleine"/>
         <img src="./img/img_elements_visuels/poisson.png" class="poisson" alt="poisson"/>
         <img src="./img/img_arriere_plan/wagon_aquarium.png" class="wagon_aquarium" alt="wagon_aquarium"/>

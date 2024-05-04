@@ -22,6 +22,18 @@ gsap.from('.arrow', {
   y: '4%',
 });
 
+//ANIMATION MORPH
+let header = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  toggleActions: 'restart complete reverse reset',
+  start: '50% top',
+  end: '100% top',
+  trigger: 'header',
+}
+})
+.to(".fleche", {duration: 0.3, morphSVG: ".eye"})
+.to(".fleche", {duration: 0.5, opacity: 0}); 
+
 //ANIMATION CHAPITRE 1
 let animChapitre01 = gsap.timeline( {scrollTrigger: {
   markers: true,
@@ -154,7 +166,12 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".bulle03", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle04", {duration: 2, opacity: 0.5}, "<")
 .to(".texte0801", {duration: 3, opacity: 1})
-.to(".baleine", {duration: 25, x: "-65vw", y: "65vh", rotate: -20}, "-=2")
+.to(".baleine", {duration: 25, motionPath: {
+  path: [
+    {x: "80vw", y: "-10vh"}, 
+    {x: "6vw", y: "40vh"}
+  ],
+},start: 0, end: 1}, "-=2")
 .to(".fille_03", {duration: 2, opacity: 1}, "-=20")
 .to(".mere_03", {duration: 2, opacity: 1}, "<")
 .to(".poisson", {duration: 20, x: "65vw"}, "<")

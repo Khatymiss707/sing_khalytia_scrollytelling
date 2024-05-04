@@ -127,6 +127,10 @@ header {
     text-align: center;
 }
 
+.eye{
+    visibility:hidden;
+  }
+
 .arrow {
     height: auto;
     width: 3vw;
@@ -854,9 +858,9 @@ section {
 
 .baleine {
     position: absolute;
+    display: inline-block;
     height: auto;
     width: 16vw;
-    left: 70vw; 
 }
 
 .poisson {
