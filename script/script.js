@@ -22,6 +22,7 @@ gsap.from('.arrow', {
   y: '4%',
 });
 
+//ANIMATION CHAPITRE 1
 let animChapitre01 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
@@ -50,6 +51,7 @@ gsap.to(".sueur_02", { duration: 3, y: "40vh", repeat: -1}, "<")
 gsap.to(".sueur_03", { duration: 1.5, y: "20vh", repeat: -1}, "<")
 gsap.to(".sueur_04", { duration: 3.5, y: "25vh", repeat: -1}, "<")
 
+//ANIMATION CHAPITRE 2
 let animChapitre02 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
@@ -70,6 +72,7 @@ animChapitre02.to(".texte02", {duration: 3, opacity: 1})
 .to(".fille_debout", {duration: 1, opacity: 1})
 .to(".train_wagon", {duration: 0.25, opacity: 0}, "<")
 
+//ANIMATION CHAPITRE 3
 let animChapitre03 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
@@ -103,6 +106,7 @@ animChapitre03.to(".texte03", {duration: 3, opacity: 1})
 .to(".fille_tombe_01", {duration: 1.5, opacity: 1, y: "15vh", rotate: 10})
 .to(".train_tombe_01", {duration: 1.2, opacity: 1, y: "70vh", rotate: -20}, "-=1"); 
 
+//ANIMATION CHAPITRE 4
 let animChapitre04 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
@@ -132,6 +136,7 @@ animChapitre04.to(".texte0601", {duration: 3, opacity: 1}, "+=1")
 .to(".ours_tombe", {duration: 1, opacity: 1, y: "75vh", rotate: 30}, "-=0.5")
 .to(".texte0605", {duration: 3, opacity: 1}); 
 
+//ANIMATION CHAPITRE 5
 let animChapitre05 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
@@ -156,7 +161,7 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".fille_02", {duration: 7, opacity: 1}, "-=15")
 .to(".fille_02", {duration: 9, x: "-60vw", y: "-130vh"}, "<")
 .to(".fille_02", {duration: 4, rotate: 60}, "<")
-.to(".texte0802", {duration: 3, opacity: 1}) 
+.to(".texte0802", {duration: 3, opacity: 1}, "-=5") 
 .to(".fille_01", {duration: 2, opacity: 1})
 .to(".train_aquarium", {duration: 2, opacity: 1}, "<")
 .to(".texte0803", {duration: 3, opacity: 1})
@@ -187,7 +192,8 @@ gsap.to(".bulle04", {duration: 1, y: "1.5vh", yoyo: true, repeat: -1}, "<")
 gsap.to(".fille_01", {duration: 2.5, y: "1vh", yoyo: true, repeat: -1}, "<") 
 gsap.to(".train_aquarium", {duration: 2, y: "1.5vh", yoyo: true, repeat: -1}, "<")
 
-let animChapitre07 = gsap.timeline( {scrollTrigger: {
+//ANIMATION CHAPITRE 6
+let animChapitre06 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true, 
   scrub: true,
@@ -198,7 +204,7 @@ let animChapitre07 = gsap.timeline( {scrollTrigger: {
 }
 }); 
 
-animChapitre07.to(".porte02", {duration: 3, opacity: 1})
+animChapitre06.to(".porte02", {duration: 3, opacity: 1})
 .to(".main_vide", {duration: 1, opacity: 1})
 .to(".main_vide", {duration: 1, scale: 1.2, y: "-10vh"}, "-=0.5")
 .to(".texte0901", {duration: 3, opacity: 1})
@@ -215,7 +221,8 @@ animChapitre07.to(".porte02", {duration: 3, opacity: 1})
 .to(".ghost02", {duration: 1, opacity: 0})
 .to(".texte0904", {duration: 3, opacity: 1}); 
 
-let animChapitre08 = gsap.timeline( {scrollTrigger: {
+//ANIMATION CHAPITRE 7
+let animChapitre07 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true,
   scrub: true,
@@ -226,7 +233,7 @@ let animChapitre08 = gsap.timeline( {scrollTrigger: {
 }
 });
 
-animChapitre08.to(".yeux_fille", {duration: 3, opacity: 1})
+animChapitre07.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".un", {duration: 3, opacity: 1})
 .to(".un", {duration: 3, opacity: 0})
 .to(".yeux_fille", {duration: 3, opacity: 0},"<")
@@ -254,7 +261,8 @@ animChapitre08.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".reunion", {duration: 3, opacity: 1})
 .to(".six", {duration: 2, opacity: 1}, "-=1"); 
 
-let animChapitre09 = gsap.timeline( {scrollTrigger: {
+//ANIMATION CHAPITRE 8
+let animChapitre08 = gsap.timeline( {scrollTrigger: {
   markers: true,
   pin: true,
   scrub: true,
@@ -265,7 +273,7 @@ let animChapitre09 = gsap.timeline( {scrollTrigger: {
 }
 })
 
-animChapitre09.to(".calin", {duration: 3, opacity: 1})
+animChapitre08.to(".calin", {duration: 3, opacity: 1})
 .to(".texte1101", {duration: 3, opacity: 1})
 .to(".texte1102", {duration: 3, opacity: 1})
 .to(".texte1103", {duration: 3, opacity: 1})
