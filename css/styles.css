@@ -194,7 +194,6 @@ section {
     position: relative;
     width: 100vw;
     height: 100vh;
-    border: solid 1px red;
     overflow: hidden;
 }
 
@@ -214,7 +213,7 @@ section {
     aspect-ratio: 500/492;
     background-size: 5000% 100%;
     width: 35vw; 
-    bottom: 0px; 
+    bottom: 0; 
     opacity: 0;
     animation-name: shake;
     animation-duration: 1s;

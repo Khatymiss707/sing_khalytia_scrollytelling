@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 //ANIMATION TIMER
 let scrollTimer; 
 
@@ -20,22 +22,37 @@ gsap.from('.arrow', {
   y: '4%',
 });
 
-let animChapitre01 = gsap.timeline()
+let animChapitre01 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '2500% top',
+  trigger: '#chapter01',
+}
+})
 .to(".texte01", {duration: 3, opacity: 1})
 .to(".yeux", {duration: 0.5, opacity: 1}, "-=2")
-.to(".yeux", {duration: 0.25, opacity: 0}, "+=3")
-.to(".ghost", {duration: 0.5, opacity: 1})
+.to(".yeux", {duration: 0.25, opacity: 0}, "+=1")
+.to(".ghost", {duration: 1, opacity: 1}, "-=0.5")
 .to(".ghost", {duration: 0.25, opacity: 0}, "+=3")
 .to(".yeux_fille_fermee", {duration: 1, opacity: 1}, "-=0.05")
 .to(".sueur_01", { duration: 2, y: "35vh", opacity: 1, repeat: -1}, "<")
 .to(".sueur_02", { duration: 3, y: "40vh", opacity: 1, repeat: -1}, "<")
 .to(".sueur_03", { duration: 1.5, y: "20vh", opacity: 1, repeat: -1}, "<")
 .to(".sueur_04", { duration: 3.5, y: "25vh", opacity: 1, repeat: -1}, "<")
-.to(".yeux_fille_fermee", {duration: 0.5, opacity: 0}, "+=0.5")
+.to(".yeux_fille_fermee", {duration: 0.5, opacity: 0})
 .to(".yeux_fille_ouvert", {duration: 0.5, opacity: 1}, "-=0.05"); 
 
-let animChapitre02 = gsap.timeline()
-.to(".texte02", {duration: 3, opacity: 1})
+let animChapitre02 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '1000% top',
+  trigger: '#chapter02',
+}
+}); 
+
+animChapitre02.to(".texte02", {duration: 3, opacity: 1})
 .to(".fille_couche", {duration: 1, opacity: 1}, "-=2")
 .to(".train_wagon", {duration: 1, opacity: 1}, "<")
 .to(".fille_couche", {duration: 0.25, opacity: 0}, "+=1")
@@ -44,8 +61,16 @@ let animChapitre02 = gsap.timeline()
 .to(".fille_debout", {duration: 1, opacity: 1})
 .to(".train_wagon", {duration: 0.25, opacity: 0}, "<")
 
-let animChapitre03 = gsap.timeline()
-.to(".texte03", {duration: 3, opacity: 1})
+let animChapitre03 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '1500% top',
+  trigger: '#chapter03',
+}
+}); 
+
+animChapitre03.to(".texte03", {duration: 3, opacity: 1})
 .to(".fille_regarde_droite", {duration: 1, opacity: 1}, "-=2")
 .to(".arriere_porte", {duration: 1, opacity: 1},  "+=0.5")
 .to(".porte", {duration: 0.05, scale: 2})
@@ -67,8 +92,16 @@ let animChapitre03 = gsap.timeline()
 .to(".fille_tombe_01", {duration: 1.5, opacity: 1, y: "15vh", rotate: 10})
 .to(".train_tombe_01", {duration: 1.2, opacity: 1, y: "70vh", rotate: -20}, "-=1"); 
 
-let animChapitre04 = gsap.timeline()
-.to(".texte0601", {duration: 3, opacity: 1}, "+=1")
+let animChapitre04 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '1700% top',
+  trigger: '#chapter04',
+}
+}); 
+
+animChapitre04.to(".texte0601", {duration: 3, opacity: 1}, "+=1")
 .to(".fille_08", {duration: 2, opacity: 1})
 .to(".train_chambre", {duration: 2, opacity: 1}, "<")
 .to(".mere_01", {duration: 2, opacity: 1}, "<")
@@ -86,8 +119,16 @@ let animChapitre04 = gsap.timeline()
 .to(".ours_tombe", {duration: 1, opacity: 1, y: "75vh", rotate: 30}, "-=0.5")
 .to(".texte0605", {duration: 3, opacity: 1}); 
 
-let animChapitre05 = gsap.timeline()
-.to(".bulle_train", {duration: 2, opacity: 0.5})
+let animChapitre05 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '3000% top',
+  trigger: '#chapter06',
+}
+}); 
+
+animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".bulle01", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle02", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle03", {duration: 2, opacity: 0.5}, "<")
@@ -130,8 +171,16 @@ let animChapitre05 = gsap.timeline()
 .to(".thud04", {duration: 2, opacity: 0}, "<")
 .to(".girl", {duration: 5, x: "113vw"}, "<"); 
 
-let animChapitre07 = gsap.timeline()
-.to(".porte02", {duration: 3, opacity: 1})
+let animChapitre07 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '2300% top',
+  trigger: '#chapter07',
+}
+}); 
+
+animChapitre07.to(".porte02", {duration: 3, opacity: 1})
 .to(".main_vide", {duration: 1, opacity: 1})
 .to(".main_vide", {duration: 1, scale: 1.2, y: "-10vh"}, "-=0.5")
 .to(".texte0901", {duration: 3, opacity: 1})
@@ -148,15 +197,23 @@ let animChapitre07 = gsap.timeline()
 .to(".ghost02", {duration: 1, opacity: 0})
 .to(".texte0904", {duration: 3, opacity: 1}); 
 
-let animChapitre08 = gsap.timeline()
-.to(".yeux_fille", {duration: 3, opacity: 1})
+let animChapitre08 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '2300% top',
+  trigger: '#chapter08',
+}
+});
+
+animChapitre08.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".un", {duration: 3, opacity: 1})
 .to(".un", {duration: 3, opacity: 0})
 .to(".yeux_fille", {duration: 3, opacity: 0},"<")
 .to(".background_noir01", {duration: 3, opacity: 0}, "<")
-.to(".railles", {duration: 3, opacity: 1, y: "-6vw"})
+.to(".railles", {duration: 3, opacity: 1, y: "-2vw"})
 .to(".nuage", {duration: 2, opacity: 1, y: "-2vw"}, "<")
-.to(".gazon", {duration: 3, opacity: 1, y: "-8vw"}, "<")
+.to(".gazon", {duration: 3, opacity: 1, y: "-3vw"}, "<")
 .to(".mere_de_dos", {duration: 2, opacity: 1})
 .to(".deux", {duration: 3, opacity: 1})
 .to(".deux", {duration: 2, opacity: 0})
@@ -177,8 +234,16 @@ let animChapitre08 = gsap.timeline()
 .to(".reunion", {duration: 3, opacity: 1})
 .to(".six", {duration: 2, opacity: 1}, "-=1"); 
 
-let animChapitre09 = gsap.timeline()
-.to(".calin", {duration: 3, opacity: 1})
+let animChapitre09 = gsap.timeline( {scrollTrigger: {
+  markers: true,
+  pin: true, 
+  start: 'top top',
+  end: '1000% top',
+  trigger: '#chapter09',
+}
+})
+
+animChapitre09.to(".calin", {duration: 3, opacity: 1})
 .to(".texte1101", {duration: 3, opacity: 1})
 .to(".texte1102", {duration: 3, opacity: 1})
 .to(".texte1103", {duration: 3, opacity: 1})
