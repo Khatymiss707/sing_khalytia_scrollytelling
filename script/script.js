@@ -156,7 +156,7 @@ let animChapitre05 = gsap.timeline( {scrollTrigger: {
   toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '3000% top',
-  trigger: '#chapter06',
+  trigger: '#chapter05',
 }
 }); 
 
@@ -217,7 +217,7 @@ let animChapitre06 = gsap.timeline( {scrollTrigger: {
   toggleActions: 'restart complete reverse reset',
   start: 'top top',
   end: '2300% top',
-  trigger: '#chapter07',
+  trigger: '#chapter06',
 }
 }); 
 
@@ -246,7 +246,7 @@ let animChapitre07 = gsap.timeline( {scrollTrigger: {
   toggleActions: 'restart complete reverse reset', 
   start: 'top top',
   end: '2300% top',
-  trigger: '#chapter08',
+  trigger: '#chapter07',
 }
 });
 
@@ -255,10 +255,10 @@ animChapitre07.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".un", {duration: 3, opacity: 0})
 .to(".yeux_fille", {duration: 3, opacity: 0},"<")
 .to(".background_noir01", {duration: 3, opacity: 0}, "<")
-.to(".railles", {duration: 3, opacity: 1, y: "-2vw"})
+.to(".railles", {duration: 2, opacity: 1, y: "-3vh"})
 .to(".nuage", {duration: 2, opacity: 1, y: "-2vw"}, "<")
-.to(".gazon", {duration: 3, opacity: 1, y: "-3vw"}, "<")
-.to(".mere_de_dos", {duration: 2, opacity: 1})
+.to(".gazon", {duration: 3, opacity: 1, y: "-5vh"}, "<")
+.to(".mere_de_dos", {duration: 3, opacity: 1, y: "-3vh"}, "<")
 .to(".deux", {duration: 3, opacity: 1})
 .to(".deux", {duration: 2, opacity: 0})
 .to(".trois", {duration: 3, opacity: 1}, "-=1")
@@ -286,7 +286,7 @@ let animChapitre08 = gsap.timeline( {scrollTrigger: {
   toggleActions: 'restart complete reverse reset', 
   start: 'top top',
   end: '1000% top',
-  trigger: '#chapter09',
+  trigger: '#chapter08',
 }
 })
 

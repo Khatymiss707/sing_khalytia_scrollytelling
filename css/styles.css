@@ -645,7 +645,7 @@ section {
     height: auto;
     width: 5vw;
     left: 60vw; 
-    top: 73vh; 
+    bottom: 10vh; 
 }
 
 .mere_01 {
@@ -654,7 +654,7 @@ section {
     width: 30vw;
     opacity: 0;
     left: 10vw;
-    top: 50vh; 
+    bottom: 10vh; 
 }
 
 .fille_08 {
@@ -663,7 +663,7 @@ section {
     width: 30vw;
     opacity: 0;
     left: 56vw;
-    top: 40vh;  
+    bottom: 20vh;  
 }
 
 .fille_09 {
@@ -672,7 +672,7 @@ section {
     width: 23vw;
     opacity: 0;
     left: 38vw;
-    top: 60vh;
+    bottom: 10vh;
 }
 
 .fille_07 {
@@ -681,7 +681,7 @@ section {
     width: 30vw;
     opacity: 0;
     left: -5vw;
-    top: 55vh;
+    bottom: 6vh;
 }
 
 .train_chambre {
@@ -690,7 +690,7 @@ section {
     width: 7vw;
     opacity: 0;
     left: 85vw;
-    top: 86vh;
+    bottom: 6vh;
 }
 
 .bruitage_thud {
@@ -792,10 +792,10 @@ section {
 }
 
 /*-------------------------------------------------------------------------------------
-# Chapitre 6
+# Chapitre 5
 -------------------------------------------------------------------------------------*/
 
-#chapter06 {
+#chapter05 {
     background-image: url("../img/img_arriere_plan/exterieur_wagon.jpg");
     background-size: contain;
     background-repeat: repeat-x;
@@ -823,11 +823,10 @@ section {
     height: auto;
     width: 20vw;
     opacity: 0;
-    left: 10vw;
-    top: 50vh; 
+    left: 10vw; 
     opacity: 0;
     left: 47vw;
-    top: 25vh;
+    bottom: 8vh;
 }
 
 .fille_03 {
@@ -836,7 +835,7 @@ section {
     width: 30vw;
     opacity: 0;
     left: 30vw;
-    top: 50vh;
+    bottom: 8vh;
 }
 
 .fille_02 {
@@ -854,7 +853,7 @@ section {
     width: 38vw;
     opacity: 0;
     left: -3vw;
-    top: 7vh; 
+    top: 10vh;
 }
 
 .baleine {
@@ -887,7 +886,7 @@ section {
     width: 6vw;
     opacity: 0;
     left: 17vw;
-    top: 50vh;
+    top: 42vh;
     transform: rotate(30deg);  
 }
 
@@ -993,10 +992,10 @@ section {
 }
 
 /*-------------------------------------------------------------------------------------
-# Chapitre 7
+# Chapitre 6
 -------------------------------------------------------------------------------------*/
 
-#chapter07 {
+#chapter06 {
     background-image: url("../img/img_arriere_plan/arriere_plan_porte.jpg");
     background-size: cover;
 }
@@ -1099,10 +1098,10 @@ section {
 }
 
 /*-------------------------------------------------------------------------------------
-# Chapitre 8
+# Chapitre 7
 -------------------------------------------------------------------------------------*/
 
-#chapter08 {
+#chapter07 {
     background-color: var(--blancGris);
     background-size: cover;
 }
@@ -1121,7 +1120,7 @@ section {
     width: 100vw;
     height: auto;
     opacity: 0;
-    bottom: 0;
+    bottom: -5vh;
 }
 
 .nuage {
@@ -1136,7 +1135,9 @@ section {
     width: 55vw;
     height: auto;
     opacity: 0;
-    bottom: 0;
+    bottom: -5vh;
+    left: 1vw;
+    transform: scale(1.3);
 }
 
 .mere_de_dos {
@@ -1144,7 +1145,7 @@ section {
     width: 70vw; 
     height: auto; 
     opacity: 0;
-    bottom: 0;
+    bottom: -3vh;
 }
 
 .bras_mere {
@@ -1216,10 +1217,10 @@ section {
 }
 
 /*-------------------------------------------------------------------------------------
-# Chapitre 9
+# Chapitre 8
 -------------------------------------------------------------------------------------*/
 
-#chapter09 {
+#chapter08 {
     background-color: var(--blanc);
     background-size: cover;
 }
@@ -1317,7 +1318,7 @@ section {
 
 footer {
     padding-top: 10px;
-    background-color: var(--blanc);
+    background-color: var(--noir);
 }
 
 /*-------------------------------------------------------------------------------------
