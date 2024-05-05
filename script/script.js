@@ -160,18 +160,22 @@ let animChapitre05 = gsap.timeline( {scrollTrigger: {
 }
 }); 
 
+gsap.set("#path",{drawSVG:"0% 0%"});
+
 animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".bulle01", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle02", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle03", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle04", {duration: 2, opacity: 0.5}, "<")
 .to(".texte0801", {duration: 3, opacity: 1})
+.to(".drawFish", {x: "-180vh", duration: 5})
+.to("#path", { drawSVG:"0% 100%", duration: 1.5}, "-=4.5")
 .to(".baleine", {duration: 25, motionPath: {
   path: [
     {x: "80vw", y: "-10vh"}, 
     {x: "6vw", y: "40vh"}
   ],
-},start: 0, end: 1}, "-=2")
+},start: 0, end: 1}, "-=6")
 .to(".fille_03", {duration: 2, opacity: 1}, "-=20")
 .to(".mere_03", {duration: 2, opacity: 1}, "<")
 .to(".poisson", {duration: 20, x: "65vw"}, "<")

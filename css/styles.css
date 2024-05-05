@@ -871,6 +871,22 @@ section {
     top: 20vh; 
 }
 
+.drawFish {
+    position: absolute;
+    height: auto;
+    width: 10vw;
+    top: 20vh; 
+    right: -10vw; 
+    z-index: 10000;
+}
+
+#path {
+    stroke: var(--blanc);
+    stroke-width: 10px;
+    stroke-dashoffset: 0.001;
+    stroke-dasharray: 0px, 999999px;
+  }
+
 .bulle_train {
     position: absolute;
     height: auto;
