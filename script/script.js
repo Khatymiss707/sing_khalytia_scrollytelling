@@ -24,7 +24,6 @@ gsap.from('.arrow', {
 
 //ANIMATION MORPH
 let header = gsap.timeline( {scrollTrigger: {
-  markers: true,
   toggleActions: 'restart complete reverse reset',
   start: '50% top',
   end: '100% top',
@@ -36,7 +35,6 @@ let header = gsap.timeline( {scrollTrigger: {
 
 //ANIMATION CHAPITRE 1
 let animChapitre01 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true,
   toggleActions: 'restart complete reverse reset',
@@ -65,7 +63,6 @@ gsap.to(".sueur_04", { duration: 3.5, y: "25vh", repeat: -1}, "<")
 
 //ANIMATION CHAPITRE 2
 let animChapitre02 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true, 
   start: 'top top',
@@ -86,7 +83,6 @@ animChapitre02.to(".texte02", {duration: 3, opacity: 1})
 
 //ANIMATION CHAPITRE 3
 let animChapitre03 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true,
   toggleActions: 'restart complete reverse reset',
@@ -120,7 +116,6 @@ animChapitre03.to(".texte03", {duration: 3, opacity: 1})
 
 //ANIMATION CHAPITRE 4
 let animChapitre04 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true,
   toggleActions: 'restart complete reverse reset',
@@ -150,7 +145,6 @@ animChapitre04.to(".texte0601", {duration: 3, opacity: 1}, "+=1")
 
 //ANIMATION CHAPITRE 5
 let animChapitre05 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true,
   toggleActions: 'restart complete reverse reset',
@@ -211,7 +205,6 @@ gsap.to(".train_aquarium", {duration: 2, y: "1.5vh", yoyo: true, repeat: -1}, "<
 
 //ANIMATION CHAPITRE 6
 let animChapitre06 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true, 
   scrub: true,
   toggleActions: 'restart complete reverse reset',
@@ -240,7 +233,6 @@ animChapitre06.to(".porte02", {duration: 3, opacity: 1})
 
 //ANIMATION CHAPITRE 7
 let animChapitre07 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true,
   scrub: true,
   toggleActions: 'restart complete reverse reset', 
@@ -258,7 +250,7 @@ animChapitre07.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".railles", {duration: 2, opacity: 1, y: "-3vh"})
 .to(".nuage", {duration: 2, opacity: 1, y: "-2vw"}, "<")
 .to(".gazon", {duration: 3, opacity: 1, y: "-5vh"}, "<")
-.to(".mere_de_dos", {duration: 3, opacity: 1, y: "-3vh"}, "<")
+.to(".mere_de_dos", {duration: 3, opacity: 1, y: "-8vh"}, "<")
 .to(".deux", {duration: 3, opacity: 1})
 .to(".deux", {duration: 2, opacity: 0})
 .to(".trois", {duration: 3, opacity: 1}, "-=1")
@@ -280,7 +272,6 @@ animChapitre07.to(".yeux_fille", {duration: 3, opacity: 1})
 
 //ANIMATION CHAPITRE 8
 let animChapitre08 = gsap.timeline( {scrollTrigger: {
-  markers: true,
   pin: true,
   scrub: true,
   toggleActions: 'restart complete reverse reset', 

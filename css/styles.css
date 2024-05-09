@@ -98,10 +98,6 @@ h6,
 # Header
 -------------------------------------------------------------------------------------*/
 
-* {
-    border: 3px solid green; 
-}
-
 body {
     background-color: var(--grisNoir);
     overflow-x: hidden;
@@ -205,7 +201,7 @@ ul.technique-gsap{
     font-family: monospace;
     font-weight: 400;
     width: auto;
-    display: inline-block;
+    display: none;
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
@@ -223,9 +219,7 @@ section {
     position: relative;
     width: 100vw;
     height: 100vh;
-    border: solid 1px red;
     overflow: hidden;
-    border: 1px solid red; 
 }
 
 #chapter01 {
@@ -1145,7 +1139,7 @@ section {
     width: 70vw; 
     height: auto; 
     opacity: 0;
-    bottom: -3vh;
+    bottom: -10vh;
 }
 
 .bras_mere {
@@ -1318,7 +1312,7 @@ section {
 
 footer {
     padding-top: 10px;
-    background-color: var(--noir);
+    background-color: var(--grisNoir);
 }
 
 /*-------------------------------------------------------------------------------------
