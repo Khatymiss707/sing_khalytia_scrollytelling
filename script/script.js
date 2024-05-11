@@ -160,11 +160,8 @@ animChapitre05.to(".bulle_train", {duration: 2, opacity: 0.5})
 .to(".bulle03", {duration: 2, opacity: 0.5}, "<")
 .to(".bulle04", {duration: 2, opacity: 0.5}, "<")
 .to(".texte0801", {duration: 3, opacity: 1})
-<<<<<<< Updated upstream
-=======
 .to(".drawFish", {x: "-300vh", duration: 8})
 .to("#path", { drawSVG:"0% 100%", duration: 1.5}, "-=4.5")
->>>>>>> Stashed changes
 .to(".baleine", {duration: 25, motionPath: {
   path: [
     {x: "80vw", y: "-10vh"}, 
@@ -255,11 +252,7 @@ animChapitre07.to(".yeux_fille", {duration: 3, opacity: 1})
 .to(".railles", {duration: 2, opacity: 1, y: "-3vh"})
 .to(".nuage", {duration: 2, opacity: 1, y: "-2vw"}, "<")
 .to(".gazon", {duration: 3, opacity: 1, y: "-5vh"}, "<")
-<<<<<<< Updated upstream
-.to(".mere_de_dos", {duration: 3, opacity: 1, y: "-8vh"}, "<")
-=======
 .to(".mere_de_dos", {duration: 3, opacity: 1, y: "-7vh"}, "<")
->>>>>>> Stashed changes
 .to(".deux", {duration: 3, opacity: 1})
 .to(".deux", {duration: 2, opacity: 0})
 .to(".trois", {duration: 3, opacity: 1}, "-=1")
