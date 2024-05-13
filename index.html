@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
     <link rel="icon" type="image/x-icon" href="./img/train_favicon.png" />
+    <meta http-equiv="Cache-control" content="max-age=31536000">
     <title>Simulacrum</title>
   </head>
 
@@ -41,6 +42,7 @@
         <img
           class="imgTitle"
           src="./img/img_arriere_plan/exterieur_wagon.jpg"
+          alt="image_arriere_plan_header"
         />
       </div>
       <ul class="technique-gsap"> 
@@ -61,13 +63,13 @@
         <div class="container">
             <div class="yeux"></div>
             <div class="ghost" alt="fantome_de_son_cauchemar"></div>
-            <img src="./img/img_personnages/yeux_ferme.png" class="yeux_fille_fermee" alt="yeux_fille_fermee"/>
-            <img src="./img/img_personnages/yeux_ouvert.png" class="yeux_fille_ouvert" alt="yeux_fille_ouvert"/>
+            <img src="./img/img_compressed/yeux_ferme.png" class="yeux_fille_fermee" alt="yeux_fille_fermee" loading="lazy"/>
+            <img src="./img/img_compressed/yeux_ouvert.png" class="yeux_fille_ouvert" alt="yeux_fille_ouvert" loading="lazy"/>
         </div>
-        <img src="./img/img_elements_visuels/goutte01.png" class="sueur_01" alt="sueur_01"/>
-        <img src="./img/img_elements_visuels/goutte02.png" class="sueur_02" alt="sueur_02"/>
-        <img src="./img/img_elements_visuels/goutte03.png" class="sueur_03" alt="sueur_03"/>
-        <img src="./img/img_elements_visuels/goutte04.png" class="sueur_04" alt="sueur_04"/>
+        <img src="./img/img_compressed/goutte01.png" class="sueur_01" alt="sueur_01" loading="lazy"/>
+        <img src="./img/img_compressed/goutte02.png" class="sueur_02" alt="sueur_02" loading="lazy"/>
+        <img src="./img/img_compressed/goutte03.png" class="sueur_03" alt="sueur_03" loading="lazy"/>
+        <img src="./img/img_compressed/goutte04.png" class="sueur_04" alt="sueur_04"loading="lazy"/>
         <ul class="technique-gsap"> 
             <li>Animation des gouttes en boucles (translate)</li> 
             <li>scrollTrigger 
@@ -85,12 +87,12 @@
       </section>
 
       <section id="chapter02">
-        <img src="./img/img_arriere_plan/wagon.png" class="wagon_original" alt="wagon_original"/>
+        <img src="./img/img_compressed/wagon.png" class="wagon_original" alt="wagon_original" loading="lazy"/>
         <h3 class="texte02"> Elle ouvre les yeux, seule dans cet endroit interminable, proie aux monstres qui règnent dans les ombres </h3>
-        <img src="./img/img_personnages/fille_couche.png" class="fille_couche" alt="fille_couche"/>
-        <img src="./img/img_personnages/fille_assise.png" class="fille_assise" alt="fille_assise"/>
-        <img src="./img/img_personnages/fille_debout.png" class="fille_debout" alt="fille_debout"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_wagon" alt="train"/>
+        <img src="./img/img_compressed/fille_couche.png" class="fille_couche" alt="fille_couche" loading="lazy"/>
+        <img src="./img/img_compressed/fille_assise.png" class="fille_assise" alt="fille_assise" loading="lazy"/>
+        <img src="./img/img_compressed/fille_debout.png" class="fille_debout" alt="fille_debout" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_wagon" alt="train" loading="lazy"/>
         <ul class="technique-gsap"> 
             <li>Animation parallaxe horizontale arriere plan du wagon en boucle</li> 
             <li>scrollTrigger 
@@ -108,16 +110,16 @@
       </section>
 
       <section id="chapter03">
-        <img src="./img/img_arriere_plan/wagon_perspective.png" class="wagon_perspective" alt="wagon_perspective"/>
-        <img src="./img/img_personnages/fille_regarde_droite.png" class="fille_regarde_droite" alt="fille_regarde_droite"/>
-        <img src="./img/img_personnages/fille_regarde_gauche.png" class="fille_regarde_gauche" alt="fille_regarde_gauche"/>
-        <img src="./img/img_arriere_plan/arriere_plan_porte.jpg" class="arriere_porte" alt="arriere_porte"/>
-        <img src="./img/img_personnages/fantome.png" class="fantome_femme" alt="fantome_femme"/>
-        <img src="./img/img_arriere_plan/porte.png" class="porte" alt="porte"/>
-        <img src="./img/img_personnages/main_derriere.png" class="main_fille_pousse" alt="main_fille_pousse"/>
-        <img src="./img/img_arriere_plan/arriere_plan_tombee.jpg" class="arriere_plan_gris" alt="arriere_plan_gris" />
-        <img src="./img/img_personnages/fille_tombe.png" class="fille_tombe_01" alt="fille_tombe"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_tombe_01" alt="train"/>
+        <img src="./img/img_compressed/wagon_perspective.png" class="wagon_perspective" alt="wagon_perspective" loading="lazy"/>
+        <img src="./img/img_compressed/fille_regarde_droite.png" class="fille_regarde_droite" alt="fille_regarde_droite" loading="lazy"/>
+        <img src="./img/img_compressed/fille_regarde_gauche.png" class="fille_regarde_gauche" alt="fille_regarde_gauche" loading="lazy"/>
+        <img src="./img/img_compressed/arriere_plan_porte.jpg" class="arriere_porte" alt="arriere_porte" loading="lazy"/>
+        <img src="./img/img_compressed/fantome.png" class="fantome_femme" alt="fantome_femme" loading="lazy"/>
+        <img src="./img/img_compressed/porte.png" class="porte" alt="porte" loading="lazy"/>
+        <img src="./img/img_compressed/main_derriere.png" class="main_fille_pousse" alt="main_fille_pousse" loading="lazy"/>
+        <img src="./img/img_compressed/arriere_plan_tombee.jpg" class="arriere_plan_gris" alt="arriere_plan_gris" loading="lazy"/>
+        <img src="./img/img_compressed/fille_tombe.png" class="fille_tombe_01" alt="fille_tombe" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_tombe_01" alt="train" loading="lazy"/>
         <h3 class="texte03">Un murmure sinistre se fait entendre</h3>
         <h3 class="texte04">Un frisson parcourt sa peau, l'effroi prend sa place</h3>
         <h3 class="texte05">Elle chute, descente incessante</h3>
@@ -147,20 +149,20 @@
       </section>
 
       <section id="chapter04">
-        <img src="./img/img_arriere_plan/wagon_enfant.png" class="wagon_enfant" alt="wagon_enfant"/>
-        <img src="./img/img_elements_visuels/ours.png" class="ours_immobile" alt="ours_immobile"/>
-        <img src="./img/img_personnages/memoir08.png" class="fille_08" alt="fille_jouet_suspendu"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_chambre" alt="train"/>
-        <img src="./img/img_personnages/memoir09.png" class="fille_09" alt="fille_ours"/>
-        <img src="./img/img_personnages/memoir07.png" class="fille_07" alt="fille_blocs"/>
-        <img src="./img/img_personnages/mere_01.png" class="mere_01" alt="mere_chambre">
-        <img src="./img/img_arriere_plan/arriere_plan_tombee.jpg" class="arriere_plan_gris_02" alt="arriere_plan_gris"/>
-        <img src="./img/img_personnages/fille_tombe.png" class="fille_tombe_02" alt="fille_tombe"/>
-        <img src="./img/img_elements_visuels/prisme_triangulaire.png" class="triangulaire" alt="prisme_triangulaire"/>
-        <img src="./img/img_elements_visuels/prisme_triangulaire.png" class="triangulaire02" alt="prisme_triangulaire"/>
-        <img src="./img/img_elements_visuels/ours tombe.png" class="ours_tombe" alt="ours_tombe"/>
-        <img src="./img/img_elements_visuels/jeu_mobile.png" class="jeu_mobile" alt="jeu_mobile"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_tombe_02" alt="train"/>
+        <img src="./img/img_compressed/wagon_enfant.png" class="wagon_enfant" alt="wagon_enfant" loading="lazy"/>
+        <img src="./img/img_compressed/ours.png" class="ours_immobile" alt="ours_immobile" loading="lazy"/>
+        <img src="./img/img_compressed/memoir08.png" class="fille_08" alt="fille_jouet_suspendu" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_chambre" alt="train" loading="lazy"/>
+        <img src="./img/img_compressed/memoir09.png" class="fille_09" alt="fille_ours" loading="lazy"/>
+        <img src="./img/img_compressed/memoir07.png" class="fille_07" alt="fille_blocs" loading="lazy"/>
+        <img src="./img/img_compressed/mere_01.png" class="mere_01" alt="mere_chambre" loading="lazy"/>
+        <img src="./img/img_compressed/arriere_plan_tombee.jpg" class="arriere_plan_gris_02" alt="arriere_plan_gris" loading="lazy"/>
+        <img src="./img/img_compressed/fille_tombe.png" class="fille_tombe_02" alt="fille_tombe" loading="lazy"/>
+        <img src="./img/img_compressed/prisme_triangulaire.png" class="triangulaire" alt="prisme_triangulaire" loading="lazy"/>
+        <img src="./img/img_compressed/prisme_triangulaire.png" class="triangulaire02" alt="prisme_triangulaire" loading="lazy"/>
+        <img src="./img/img_compressed/ours tombe.png" class="ours_tombe" alt="ours_tombe" loading="lazy"/>
+        <img src="./img/img_compressed/jeu_mobile.png" class="jeu_mobile" alt="jeu_mobile" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_tombe_02" alt="train" loading="lazy"/>
         <div class="container02">
           <h3 class="texte0601">La tombée l'emporte dans la douceur familière de sa chambre d'enfant</h3>
           <h3 class="texte0602">Elle se blottit, perdue dans le passé</h3>
@@ -185,29 +187,29 @@
       </section>
 
       <section id="chapter05">
-        <img src="./img/img_elements_visuels/baleine.png" class="baleine" alt="baleine"/>
-        <img src="./img/img_elements_visuels/poisson.png" class="poisson" alt="poisson"/>
-        <img src="./img/img_arriere_plan/wagon_aquarium.png" class="wagon_aquarium" alt="wagon_aquarium"/>
-        <img src="./img/img_personnages/mere_03.png" class="mere_03" alt="mere_chambre">
-        <img src="./img/img_elements_visuels/bulle02.png" class="bulle_train" alt="bulle">
-        <img src="./img/img_personnages/memoir03.png" class="fille_03" alt="fille_regarde"/>
-        <img src="./img/img_personnages/memoir02.png" class="fille_02" alt="fille_nage"/>
-        <img src="./img/img_personnages/memoir01.png" class="fille_01" alt="fille_bulle"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_aquarium" alt="train"/>
+        <img src="./img/img_compressed/baleine.png" class="baleine" alt="baleine" loading="lazy"/>
+        <img src="./img/img_compressed/poisson.png" class="poisson" alt="poisson" loading="lazy"/>
+        <img src="./img/img_compressed/wagon_aquarium.png" class="wagon_aquarium" alt="wagon_aquarium" loading="lazy"/>
+        <img src="./img/img_compressed/mere_03.png" class="mere_03" alt="mere_chambre" loading="lazy"/>
+        <img src="./img/img_compressed/bulle02.png" class="bulle_train" alt="bulle" loading="lazy"/>
+        <img src="./img/img_compressed/memoir03.png" class="fille_03" alt="fille_regarde" loading="lazy"/>
+        <img src="./img/img_compressed/memoir02.png" class="fille_02" alt="fille_nage" loading="lazy"/>
+        <img src="./img/img_compressed/memoir01.png" class="fille_01" alt="fille_bulle" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_aquarium" alt="train" loading="lazy"/>
         <!-- <svg class="drawFish" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <path id="path" d="M472.2688 808.96c-47.104 0-105.8816-32.9728-147.0464-60.8256-7.168-4.7104-9.8304-13.312-6.9632-21.504 2.8672-7.9872 10.4448-12.9024 19.0464-12.0832 82.1248 8.192 289.9968 15.5648 443.8016-95.0272l7.7824-5.5296 6.144 7.3728c44.8512 53.6576 87.4496 73.3184 115.3024 80.2816 9.216 2.2528 17.6128 3.4816 24.576 3.8912-37.6832-33.792-60.416-83.7632-63.488-140.9024-3.4816-63.8976 17.8176-124.3136 57.9584-166.7072-74.1376 4.5056-133.7344 83.5584-134.3488 84.5824l-6.144 8.3968-8.192-6.3488c-134.5536-102.4-366.7968-94.8224-434.5856-90.112-5.7344 0.4096-10.4448-3.8912-10.8544-9.4208-0.4096-5.7344 3.8912-10.4448 9.4208-10.8544 68.4032-4.7104 299.2128-12.288 440.32 88.2688 20.6848-24.7808 88.4736-96.6656 170.8032-83.5584l22.528 3.6864-17.8176 14.336c-45.8752 37.2736-72.2944 101.1712-68.608 166.5024 3.2768 61.0304 31.3344 112.8448 76.5952 141.9264l19.456 12.4928-22.1184 5.9392c-3.6864 1.024-88.064 22.3232-180.224-82.3296-153.3952 105.472-353.28 101.9904-441.5488 94.208 51.8144 33.9968 97.0752 52.4288 128.4096 52.4288 18.2272 0 30.72-3.6864 35.2256-10.4448 4.096-5.9392 1.2288-13.7216 1.2288-13.9264-2.048-5.3248 0.4096-11.264 5.7344-13.312 5.3248-2.048 11.264 0.4096 13.312 5.7344 2.6624 6.5536 4.9152 20.8896-3.2768 32.9728-9.0112 13.312-26.624 19.8656-52.4288 19.8656z" fill="" />
           <path id="path" d="M239.616 716.8c-19.2512 0-105.472-30.5152-154.4192-78.6432-23.9616-23.552-36.2496-48.5376-36.4544-73.728 0-27.648 15.36-57.5488 45.2608-88.6784 26.2144-27.2384 63.6928-55.5008 108.544-81.5104 89.088-51.6096 199.0656-90.3168 287.1296-100.9664 103.8336-12.6976 169.3696 13.5168 184.32 73.9328 1.4336 5.5296-2.048 11.0592-7.3728 12.4928-5.5296 1.4336-11.0592-2.048-12.4928-7.3728-16.384-65.9456-108.544-64.9216-161.9968-58.368-85.4016 10.4448-192.512 48.128-279.3472 98.304-89.9072 52.0192-143.5648 108.9536-143.7696 152.3712 0.2048 19.456 10.4448 39.5264 30.3104 59.1872 41.984 41.3696 114.2784 68.4032 135.5776 72.2944 39.1168-47.9232 52.4288-103.0144 39.7312-163.4304-9.8304-47.104-32.768-80.0768-32.9728-80.2816-3.2768-4.7104-2.048-11.0592 2.4576-14.336 4.7104-3.2768 11.0592-2.048 14.336 2.4576 1.024 1.4336 25.1904 36.2496 36.0448 87.04 10.0352 47.3088 10.0352 118.1696-47.5136 185.7536l-3.072 3.4816H239.616z" fill="" />
           <path id="path" d="M185.344 533.2992m-22.9376 0a22.9376 22.9376 0 1 0 45.8752 0 22.9376 22.9376 0 1 0-45.8752 0Z" fill="" />
         </svg> -->
-        <img src="./img/img_elements_visuels/bulle03.png" class="bulle01" alt="bulle01">
-        <img src="./img/img_elements_visuels/bulle02.png" class="bulle02" alt="bulle02">
-        <img src="./img/img_elements_visuels/bulle01.png" class="bulle03" alt="bulle03">
-        <img src="./img/img_elements_visuels/bulle02.png" class="bulle04" alt="bulle02">
+        <img src="./img/img_compressed/bulle03.png" class="bulle01" alt="bulle01" loading="lazy"/>
+        <img src="./img/img_compressed/bulle02.png" class="bulle02" alt="bulle02" loading="lazy"/>
+        <img src="./img/img_compressed/bulle01.png" class="bulle03" alt="bulle03" loading="lazy"/>
+        <img src="./img/img_compressed/bulle02.png" class="bulle04" alt="bulle02" loading="lazy"/>
         <div class="girl" alt="fille_cours"></div>
-        <img src="./img/img_elements_visuels/bruitage_thud.png" class="thud01" alt="bruitage"/>
-        <img src="./img/img_elements_visuels/bruitage_thud.png" class="thud02" alt="bruitage"/>
-        <img src="./img/img_elements_visuels/bruitage_thud.png" class="thud03" alt="bruitage"/>
-        <img src="./img/img_elements_visuels/bruitage_thud.png" class="thud04" alt="bruitage"/>
+        <img src="./img/img_compressed/bruitage_thud.png" class="thud01" alt="bruitage" loading="lazy"/>
+        <img src="./img/img_compressed/bruitage_thud.png" class="thud02" alt="bruitage" loading="lazy"/>
+        <img src="./img/img_compressed/bruitage_thud.png" class="thud03" alt="bruitage" loading="lazy"/>
+        <img src="./img/img_compressed/bruitage_thud.png" class="thud04" alt="bruitage" loading="lazy"/>
         <h3 class="texte0801">La tombée l'emporte là où les poissons dansent</h3>
         <h3 class="texte0802">Un ballet de reflets apaisants</h3>
         <h3 class="texte0803">Mais le monstre la traque toujours, insidieux, agile</h3>
@@ -232,10 +234,10 @@
       </section>
 
       <section id="chapter06">
-        <img src="./img/img_arriere_plan/porte.png" class="porte02" alt="porte" />
-        <img src="./img/img_personnages/main_face.png" class="main_vide" alt="main_vide"/>
-        <img src="./img/img_elements_visuels/train.png" class="train_jouet02" alt="train"/>
-        <img src="./img/img_personnages/main_etendu.png" class="main_etendu" alt="main_etendu"/>
+        <img src="./img/img_compressed/porte.png" class="porte02" alt="porte" loading="lazy"/>
+        <img src="./img/img_compressed/main_face.png" class="main_vide" alt="main_vide" loading="lazy"/>
+        <img src="./img/img_compressed/train.png" class="train_jouet02" alt="train" loading="lazy"/>
+        <img src="./img/img_compressed/main_etendu.png" class="main_etendu" alt="main_etendu" loading="lazy"/>
         <div class="ghost02" alt="fantome_de_son_cauchemar"></div>
         <h3 class="texte0901">Dans sa course éperdue, son train jouet échappe à sa main</h3>
         <h3 class="texte0902">Elle fait volte-face, bravant sa peur, son destin incertain</h3>
@@ -259,14 +261,14 @@
 
       <section id="chapter07">
         <div class="background_noir01"></div>
-        <img src="./img/img_personnages/yeux_ouvert.png" class="yeux_fille" alt="fille_yeux_reveille"/>
-        <img src="./img/img_arriere_plan/nuage.png" class="nuage" alt="nuages">
-        <img src="./img/img_arriere_plan/rails.png" class="railles" alt="railles"/>
-        <img src="./img/img_arriere_plan/gazon.png" class="gazon" alt="gazon" />
-        <img src="./img/img_personnages/mere_dos.png" class="mere_de_dos" alt="mere_de_dos" />
-        <img src="./img/img_personnages/fille_mere.png" class="reunion" alt="reunion" />
-        <img src="./img/img_personnages/bras_mere.png" class="bras_mere" alt="bras_mere" />
-        <img src="./img/img_personnages/bras_fille.png" class="bras_fille" alt="bras_fille" />
+        <img src="./img/img_compressed/yeux_ouvert.png" class="yeux_fille" alt="fille_yeux_reveille" loading="lazy"/>
+        <img src="./img/img_compressed/nuage.png" class="nuage" alt="nuages" loading="lazy"/>
+        <img src="./img/img_compressed/rails.png" class="railles" alt="railles" loading="lazy"/>
+        <img src="./img/img_compressed/gazon.png" class="gazon" alt="gazon" loading="lazy"/>
+        <img src="./img/img_compressed/mere_dos.png" class="mere_de_dos" alt="mere_de_dos" loading="lazy"/>
+        <img src="./img/img_compressed/fille_mere.png" class="reunion" alt="reunion" loading="lazy"/>
+        <img src="./img/img_compressed/bras_mere.png" class="bras_mere" alt="bras_mere" loading="lazy"/>
+        <img src="./img/img_compressed/bras_fille.png" class="bras_fille" alt="bras_fille" loading="lazy"/>
         <h3 class="texte10 un">La quiétude enveloppe l'instant,</h3>
         <h3 class="texte10 deux">Elle contemple le dos de sa mère, comme un réconfort rassurant,</h3>
         <h3 class="texte10 trois">Les souvenirs s'éclairent, chassant l'ombre de la peur,</h3>
@@ -293,13 +295,13 @@
       </section>
 
       <section id="chapter08">
-        <img src="./img/img_personnages/mere_fille_reunion.jpg" class="calin" alt="reunion" />
+        <img src="./img/img_compressed/mere_fille_reunion.jpg" class="calin" alt="reunion" loading="lazy"/>
         <div class="background_noir"></div>
         <h3 class="texte1101">Dans cet instant de douceur, elle serre sa mère contre son cœur,</h3>
         <h3 class="texte1102">Une révélation la frappe, dans cette étreinte, dans cette chaleur,</h3>
         <h3 class="texte1103">Le monstre qui la traquait, n'était autre que sa mère aimante,</h3>
         <h3 class="texte1104">Et dans cette prise de conscience, elle se libère de toute tourmente.</h3> 
-        <img src="./img/img_elements_visuels/train.png" class="train_jouet" alt="train"/>
+        <img src="./img/img_compressed/train.png" class="train_jouet" alt="train" loading="lazy"/>
         <ul class="technique-gsap"> 
             <li>scrollTrigger 
                 <ul> 
@@ -329,6 +331,6 @@
   <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin3.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script> -->
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MotionPathPlugin.min.js"></script>
-  <script src="./script/script.js"></script>
+  <script src="./script/script.min.js"></script>
   
 </html>
